@@ -24,11 +24,9 @@ public class Item {
         double d = r.nextDouble();
         return  M+ (N*(d-0.5));
     }
-
-
     //TESTING: Prints out the time that the item needs to be produced.
-    public void printItem(){
-        System.out.print("Item's time is: " + productionTime);
+    public String timeToString(){
+        return String.format("%4.2f",productionTime);
     }
     //TESTING: Returns the production time of the item.
     public double getTime(){

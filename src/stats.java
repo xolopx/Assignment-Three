@@ -15,7 +15,6 @@ public class Stats {
     //Prints out a table of the statistics for the factory.
     public void printStats(){
         System.out.println("The number of items processed is: " + itemsProcessed);
-
     }
 
     public void incNoItemsProcessed(){

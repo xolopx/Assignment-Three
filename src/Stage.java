@@ -35,14 +35,19 @@ public class Stage implements Comparable<Stage> {
     }
     //Takes an item to be processed.
     public void processItem(Item itemToProcess){
-        itemProcessing = itemToProcess;
+        //if state is already processing cannot take another item.
+        if(state != 2) {
+            itemProcessing = itemToProcess;
+            System.out.println("Item will take "+ itemToProcess.timeToString() + " time units to complete.");
+        }else{
+            System.out.println("Homes you just tried to put an item into a stage that's processing. Check yourself.");
+        }
     }
     //Passes on the item that has been processed.
     //TO BE MODIFIED. CURRENTLY RETURNS VOID.
     public void ejectItem(){
         if(itemProcessing!=null){
             //Currently just removes the item from the stage. TO BE MODIFIED TO RETURN THE ITEM ALSO.
-
         }
         else{
             System.out.println("There was not item being processed in this stage to be passed on.");
@@ -76,13 +81,13 @@ public class Stage implements Comparable<Stage> {
         }
         //If we get to this stage something strange happened.
         else {
-            System.out.println("How did you get here? What happened in compareTo that is went so wrong.");
+            System.out.println("How did you get here? What happened in compareTo that things went so wrong.");
             return 1;
         }
 
 
     }
-    //Returns the time when the item being processed will be complete.
+    //Returns the time when the item being processed will be complete by the stage.
     public double getTimeToComplete(){
        if(itemProcessing != null){
            return timeToComplete;
