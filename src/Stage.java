@@ -21,7 +21,7 @@ public class Stage implements Comparable<Stage> {
     //This is a pointer to the previous WaitingLine/Queue.
     private ArrayList<Item> previousQueue;
     //This is time at which the item being processed will complete.
-    private int timeToComplete;
+    private double timeToComplete;
 
 
     //Constructor.
@@ -33,24 +33,29 @@ public class Stage implements Comparable<Stage> {
         //initially there is no item inside the stage so there's no time to complete.
         timeToComplete = 0;
     }
-    //Takes an item to be processed.
-    public void processItem(Item itemToProcess){
+    //Puts in a new item to be processed by the Stage and records the time when it will finish processing.
+    public void processItem(Item itemToProcess, double theTime){
         //if state is already processing cannot take another item.
         if(state != 2) {
             itemProcessing = itemToProcess;
-            System.out.println("Item will take "+ itemToProcess.timeToString() + " time units to complete.");
+            timeToComplete = itemProcessing.getTime() + theTime;
+
+            System.out.println("Item will complete at: " + timeToComplete);
         }else{
             System.out.println("Homes you just tried to put an item into a stage that's processing. Check yourself.");
         }
     }
     //Passes on the item that has been processed.
     //TO BE MODIFIED. CURRENTLY RETURNS VOID.
-    public void ejectItem(){
+    public Item ejectItem(){
         if(itemProcessing!=null){
-            //Currently just removes the item from the stage. TO BE MODIFIED TO RETURN THE ITEM ALSO.
+            Item temp = itemProcessing;
+            itemProcessing = null;
+            return temp;
         }
         else{
             System.out.println("There was not item being processed in this stage to be passed on.");
+            return null;
         }
     }
     //Compares priority of the stages, where highest priority is given to the stage with an item that will complete
@@ -97,6 +102,14 @@ public class Stage implements Comparable<Stage> {
            return -1;
        }
 
+    }
+    //set the previous array list.
+    public void setPreviousQueue(ArrayList<Item> prevList) {previousQueue = prevList;}
+    //set the next queue.
+    public void setnextQueue(ArrayList<Item> nextList){nextQueue = nextList;}
+    //Updates the time to complete for an item because another stage will have completed processing.
+    public void updateTimeToComplete(double completedItemTime){
+        timeToComplete -= completedItemTime;
     }
 
 

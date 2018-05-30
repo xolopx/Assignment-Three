@@ -3,9 +3,12 @@
  * Runs the operation of a single production line.
  * This class is made specifically for items at this point.
  */
+import javafx.scene.layout.Priority;
+
 import java.util.ArrayList;
 import java.util.PriorityQueue;
 
+//Is a generic type where T specifies the type of thing that the factory will process.
 public class Factory {
 
     //This is the amount of time the factory will simulate for.
@@ -15,18 +18,13 @@ public class Factory {
     //This is the range.
     private double N;
     //The stock feeds the first stage.
-    private ArrayList<Item> stock = new ArrayList<Item>(1);
+    private WaitingLine<Item> stock = new WaitingLine<>(1);
     //stats for the factory
     private Stats stats = new Stats();
     //An arrayList of queues. The waiting lines feed the stages that they precede.
-    private ArrayList<ArrayList<Item>> queues;
-    //An ArrayList of the stages in the factory.
-    private ArrayList<Stage> stages;
-
-
-
-
-
+    private ArrayList<WaitingLine<Item>> listOfLines;
+    //An priority queue of the stages in the factory.
+    private PriorityQueue<Stage> stages;
 
 
     /**Constructor initializes the necessary components of the factory.*/
@@ -36,29 +34,15 @@ public class Factory {
         M  = mean;
         N = range;
         stockUp(1);                                 //initially have one item in stock.
-        initQueues(queueLength, 1);         //Initialized before stages as stages point to the queues.
+        initListOfLines(queueLength, 1);         //Initialized before stages as stages point to the queues.
         initStages(numStages);                          //populate stages collection with stages.
 
     }
 
     //This runs the factory.
     public void run(){
-
-
         //Main running loop for the factory. It runs as long as there is time left on the clock.
         while(productionTime > 0){
-            //Take stock and put it into the first queue.
-            queues.get(0).add(stock.get(0));
-            //take the item out of the queue and add it to the first stage.
-            stages.get(0).processItem(queues.get(0).remove(0));
-            //Update the time of the item that has been processed.
-            updateTimeByItem(stock.get(0));
-            //Item has been processed, remove it from the stage.
-            stock.remove(0);
-            //Increment the number of items processed in the factory's statistics.
-            stats.incNoItemsProcessed();
-            //add new stock to replace old stock.
-            stockUp(1);
 
         }
 
@@ -68,10 +52,12 @@ public class Factory {
     }
     //append Items to the stock by the integer value specified.
     private void stockUp(int i){
-       //Populate the stock.
+       //declare a new item
+        Item newItem;
+        //Populate the stock.
         for(int j = 0;j<i;j++){
-            Item newItem = new Item(M,N);
-            stock.add(newItem);
+            newItem = new Item(M,N);
+            stock.addItem(newItem);
         }
     }
     //updates the productionTime remaining for the factory due to item's completion.
@@ -80,29 +66,39 @@ public class Factory {
     }
     //Prints ou the stock item's production times.
     public void printStock(int index){
-        System.out.println(stock.get(index).timeToString());
+        System.out.println()
     }
     //returns the statistics object for this factory.
     public Stats getStatistics(){
         return stats;
     }
     //Populates the queue list with queues. Queues must be initialized before stages.
-    private void initQueues(int queueLength, int numQueues){
-        queues = new ArrayList<>(numQueues);
-        ArrayList<Item> newQueue;
-        //populate the list of lists lol.
+    private void initListOfLines(int queueLength, int numQueues){
+
+        //Initialize the list of lines to size numQueue.
+        listOfLines = new ArrayList<>(numQueues);
+        //Declare a new WaitingLine to go into the list of lines.
+        WaitingLine<T> newLine;
+
+        //populate the list of lines with new lines.
         for(int i = 0; i<numQueues;i++){
-            newQueue = new ArrayList<>(queueLength);
-            queues.add(newQueue);
+            //instantiate the new line
+            newLine = new WaitingLine<>(queueLength);
+            //and place it into the list of lines.
+            listOfLines.add(newLine);
         }
     }
     //Populates the list of stages with stages.
     private void initStages(int listLength) {
-        stages = new ArrayList<>(listLength);
+        //Instantiate the priority queue for the stages to live in.
+        stages = new PriorityQueue<>(listLength);
+        //Declare a new stage.
         Stage newStage;
         //populate the list of stages with stages!!
         for(int i = 0; i<listLength;i++){
+            //instantiate the new stage
             newStage  = new Stage();
+            //and place it into the priority queue.
             stages.add(newStage);
         }
     }
