@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a21bd138-4f22-4856-8b68-de1755ae76a5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WaitingLine.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TimeTrack.xlsx" afterPath="$PROJECT_DIR$/TimeTrack.xlsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment-Three/Factory.class" afterPath="$PROJECT_DIR$/out/production/Assignment-Three/Factory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment-Three/Stage.class" afterPath="$PROJECT_DIR$/out/production/Assignment-Three/Stage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Factory.java" afterPath="$PROJECT_DIR$/src/Factory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PA3.java" afterPath="$PROJECT_DIR$/src/PA3.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Stage.java" afterPath="$PROJECT_DIR$/src/Stage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WaitingLine.java" afterPath="$PROJECT_DIR$/src/WaitingLine.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,79 +28,46 @@
       <file leaf-file-name="PA3.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PA3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="172">
+              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Factory.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Factory.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Factory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+            <state relative-caret-position="187">
+              <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
               <folding>
                 <element signature="docComment;method#Factory#0;class#Factory#0" expanded="false" />
                 <element signature="method#Factory#0;class#Factory#0" expanded="false" />
                 <element signature="method#run#0;class#Factory#0" expanded="false" />
+                <element signature="method#stockUp#0;class#Factory#0" expanded="false" />
                 <element signature="method#initListOfLines#0;class#Factory#0" expanded="false" />
                 <element signature="method#initStages#0;class#Factory#0" expanded="false" />
+                <element signature="method#printStages#0;class#Factory#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WaitingLine.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WaitingLine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="36" column="37" lean-forward="true" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
-              <folding>
-                <element signature="docComment;class#WaitingLine#0" expanded="false" />
-                <element signature="method#WaitingLine#0;class#WaitingLine#0" expanded="false" />
-                <element signature="method#isEmpty#0;class#WaitingLine#0" expanded="false" />
-                <element signature="method#isFull#0;class#WaitingLine#0" expanded="false" />
-                <element signature="e#1184#1185#0" expanded="true" />
-                <element signature="e#1229#1230#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Stats.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Stats.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Stage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Stage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Stage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="107" column="25" lean-forward="true" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
+            <state relative-caret-position="172">
+              <caret line="98" column="37" lean-forward="true" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="37" />
               <folding>
                 <element signature="docComment;class#Stage#0" expanded="false" />
                 <element signature="method#Stage#0;class#Stage#0" expanded="false" />
+                <element signature="method#processItem#0;class#Stage#0" expanded="false" />
                 <element signature="method#ejectItem#0;class#Stage#0" expanded="false" />
+                <element signature="method#compareTo#0;class#Stage#0" expanded="false" />
                 <element signature="method#getTimeToComplete#0;class#Stage#0" expanded="false" />
+                <element signature="method#setNextQueue#0;class#Stage#0" expanded="false" />
                 <element signature="method#setPreviousQueue#0;class#Stage#0" expanded="false" />
-                <element signature="method#setnextQueue#0;class#Stage#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Item.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -119,7 +84,14 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>WaitLine</find>
+      <find>itemProcessing</find>
+      <find>itemProcessing</find>
+      <find>size</find>
+      <find>setnextQueue</find>
     </findStrings>
+    <replaceStrings>
+      <replace>setNextQueue</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -140,10 +112,12 @@
         <option value="$PROJECT_DIR$/src/WaitLine.java" />
         <option value="$PROJECT_DIR$/src/Stats.java" />
         <option value="$PROJECT_DIR$/src/Item.java" />
-        <option value="$PROJECT_DIR$/src/PA3.java" />
-        <option value="$PROJECT_DIR$/src/Stage.java" />
-        <option value="$PROJECT_DIR$/src/WaitingLine.java" />
         <option value="$PROJECT_DIR$/src/Stock.java" />
+        <option value="$PROJECT_DIR$/src/Node.java" />
+        <option value="$PROJECT_DIR$/src/LinkedList.java" />
+        <option value="$PROJECT_DIR$/src/PA3.java" />
+        <option value="$PROJECT_DIR$/src/WaitingLine.java" />
+        <option value="$PROJECT_DIR$/src/Stage.java" />
         <option value="$PROJECT_DIR$/src/Factory.java" />
       </list>
     </option>
@@ -178,6 +152,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -206,9 +181,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -466,6 +440,7 @@
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
       <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -594,6 +569,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -631,6 +612,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a21bd138-4f22-4856-8b68-de1755ae76a5" name="Default" comment="" />
@@ -642,11 +626,12 @@
       <workItem from="1527151446036" duration="75000" />
       <workItem from="1527304435350" duration="4941000" />
       <workItem from="1527682033865" duration="9049000" />
+      <workItem from="1527741207807" duration="20410000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15740000" />
+    <option name="totallyTimeSpent" value="36150000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -662,35 +647,66 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3268206" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3268206" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28596804" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2564725" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11165048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16747573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285968" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39977974" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39977974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39977974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3268206" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2564725" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16747573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285968" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -717,6 +733,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Factory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+          <folding>
+            <element signature="docComment;method#Factory#0;class#Factory#0" expanded="false" />
+            <element signature="method#Factory#0;class#Factory#0" expanded="false" />
+            <element signature="method#run#0;class#Factory#0" expanded="false" />
+            <element signature="method#stockUp#0;class#Factory#0" expanded="false" />
+            <element signature="method#initListOfLines#0;class#Factory#0" expanded="false" />
+            <element signature="method#initStages#0;class#Factory#0" expanded="false" />
+            <element signature="method#printStages#0;class#Factory#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WaitingLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="36" column="37" lean-forward="true" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+          <folding>
+            <element signature="docComment;class#WaitingLine#0" expanded="false" />
+            <element signature="method#WaitingLine#0;class#WaitingLine#0" expanded="false" />
+            <element signature="method#isEmpty#0;class#WaitingLine#0" expanded="false" />
+            <element signature="method#isFull#0;class#WaitingLine#0" expanded="false" />
+            <element signature="method#addItem#0;class#WaitingLine#0" expanded="false" />
+            <element signature="method#removeItem#0;class#WaitingLine#0" expanded="false" />
+            <element signature="method#takeItem#0;class#WaitingLine#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+          <folding>
+            <element signature="docComment;class#Stats#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="107" column="25" lean-forward="true" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
+          <folding>
+            <element signature="docComment;class#Stage#0" expanded="false" />
+            <element signature="method#Stage#0;class#Stage#0" expanded="false" />
+            <element signature="method#processItem#0;class#Stage#0" expanded="false" />
+            <element signature="method#ejectItem#0;class#Stage#0" expanded="false" />
+            <element signature="method#compareTo#0;class#Stage#0" expanded="false" />
+            <element signature="method#getTimeToComplete#0;class#Stage#0" expanded="false" />
+            <element signature="method#setNextQueue#0;class#Stage#0" expanded="false" />
+            <element signature="method#setPreviousQueue#0;class#Stage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PA3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Stage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -724,10 +815,12 @@
           <folding>
             <element signature="docComment;class#Stage#0" expanded="false" />
             <element signature="method#Stage#0;class#Stage#0" expanded="false" />
+            <element signature="method#processItem#0;class#Stage#0" expanded="false" />
             <element signature="method#ejectItem#0;class#Stage#0" expanded="false" />
+            <element signature="method#compareTo#0;class#Stage#0" expanded="false" />
             <element signature="method#getTimeToComplete#0;class#Stage#0" expanded="false" />
+            <element signature="method#setNextQueue#0;class#Stage#0" expanded="false" />
             <element signature="method#setPreviousQueue#0;class#Stage#0" expanded="false" />
-            <element signature="method#setnextQueue#0;class#Stage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -748,8 +841,10 @@
             <element signature="docComment;method#Factory#0;class#Factory#0" expanded="false" />
             <element signature="method#Factory#0;class#Factory#0" expanded="false" />
             <element signature="method#run#0;class#Factory#0" expanded="false" />
+            <element signature="method#stockUp#0;class#Factory#0" expanded="false" />
             <element signature="method#initListOfLines#0;class#Factory#0" expanded="false" />
             <element signature="method#initStages#0;class#Factory#0" expanded="false" />
+            <element signature="method#printStages#0;class#Factory#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -770,8 +865,10 @@
             <element signature="docComment;method#Factory#0;class#Factory#0" expanded="false" />
             <element signature="method#Factory#0;class#Factory#0" expanded="false" />
             <element signature="method#run#0;class#Factory#0" expanded="false" />
+            <element signature="method#stockUp#0;class#Factory#0" expanded="false" />
             <element signature="method#initListOfLines#0;class#Factory#0" expanded="false" />
             <element signature="method#initStages#0;class#Factory#0" expanded="false" />
+            <element signature="method#printStages#0;class#Factory#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -780,7 +877,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="docComment;class#Stats#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -791,13 +890,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WaitLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WaitLine.java" />
     <entry file="file://$PROJECT_DIR$/src/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
@@ -813,10 +906,12 @@
           <folding>
             <element signature="docComment;class#Stage#0" expanded="false" />
             <element signature="method#Stage#0;class#Stage#0" expanded="false" />
+            <element signature="method#processItem#0;class#Stage#0" expanded="false" />
             <element signature="method#ejectItem#0;class#Stage#0" expanded="false" />
+            <element signature="method#compareTo#0;class#Stage#0" expanded="false" />
             <element signature="method#getTimeToComplete#0;class#Stage#0" expanded="false" />
+            <element signature="method#setNextQueue#0;class#Stage#0" expanded="false" />
             <element signature="method#setPreviousQueue#0;class#Stage#0" expanded="false" />
-            <element signature="method#setnextQueue#0;class#Stage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -826,7 +921,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="docComment;class#Stats#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -837,21 +934,17 @@
           <folding>
             <element signature="docComment;class#Stage#0" expanded="false" />
             <element signature="method#Stage#0;class#Stage#0" expanded="false" />
+            <element signature="method#processItem#0;class#Stage#0" expanded="false" />
             <element signature="method#ejectItem#0;class#Stage#0" expanded="false" />
+            <element signature="method#compareTo#0;class#Stage#0" expanded="false" />
             <element signature="method#getTimeToComplete#0;class#Stage#0" expanded="false" />
+            <element signature="method#setNextQueue#0;class#Stage#0" expanded="false" />
             <element signature="method#setPreviousQueue#0;class#Stage#0" expanded="false" />
-            <element signature="method#setnextQueue#0;class#Stage#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WaitLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WaitLine.java" />
     <entry file="file://$PROJECT_DIR$/src/TimeLord.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -914,89 +1007,159 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WaitLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WaitLine.java" />
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_121/src.zip!/java/lang/Comparable.java" />
     <entry file="file://$PROJECT_DIR$/../../assignment 2 source files/PlanarShape.java" />
     <entry file="file://$PROJECT_DIR$/../../assignment 2 source files/Point.java" />
     <entry file="file://$PROJECT_DIR$/src/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="527">
           <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_121/src.zip!/java/util/ArrayList.java" />
-    <entry file="file://$PROJECT_DIR$/src/PA3.java">
+    <entry file="file://$PROJECT_DIR$/src/Stock.java" />
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/java/util/Iterator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="117">
+          <caret line="69" column="6" lean-forward="false" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stock.java">
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/java/util/PriorityQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        <state relative-caret-position="179">
+          <caret line="543" column="0" lean-forward="false" selection-start-line="543" selection-start-column="0" selection-end-line="543" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="method#Node#0;class#Node#0" expanded="false" />
+            <element signature="method#Node#1;class#Node#0" expanded="false" />
+            <element signature="method#set_data#0;class#Node#0" expanded="false" />
+            <element signature="method#set_next#0;class#Node#0" expanded="false" />
+            <element signature="method#set_previous#0;class#Node#0" expanded="false" />
+            <element signature="method#get_data#0;class#Node#0" expanded="false" />
+            <element signature="method#get_previous#0;class#Node#0" expanded="false" />
+            <element signature="method#get_next#0;class#Node#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Stats.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Stats#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SortedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="50" column="22" lean-forward="false" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+          <folding>
+            <element signature="docComment;class#SortedList#0" expanded="false" />
+            <element signature="method#SortedList#0;class#SortedList#0" expanded="false" />
+            <element signature="method#moveCurrent#0;class#SortedList#0" expanded="false" />
+            <element signature="method#sort#0;class#SortedList#0" expanded="false" />
+            <element signature="e#2017#2053#0" expanded="false" />
+            <element signature="e#2542#2623#0" expanded="false" />
+            <element signature="e#2949#3050#0" expanded="false" />
+            <element signature="method#getCurrentPosition#0;class#SortedList#0" expanded="false" />
+            <element signature="method#insertInOrder#0;class#SortedList#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WaitingLine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="36" column="37" lean-forward="true" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+        <state relative-caret-position="357">
+          <caret line="44" column="32" lean-forward="false" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
           <folding>
             <element signature="docComment;class#WaitingLine#0" expanded="false" />
             <element signature="method#WaitingLine#0;class#WaitingLine#0" expanded="false" />
             <element signature="method#isEmpty#0;class#WaitingLine#0" expanded="false" />
             <element signature="method#isFull#0;class#WaitingLine#0" expanded="false" />
-            <element signature="e#1184#1185#0" expanded="true" />
-            <element signature="e#1229#1230#0" expanded="true" />
+            <element signature="method#addItem#0;class#WaitingLine#0" expanded="false" />
+            <element signature="method#removeItem#0;class#WaitingLine#0" expanded="false" />
+            <element signature="method#takeItem#0;class#WaitingLine#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Factory.java">
+    <entry file="file://$PROJECT_DIR$/src/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+        <state relative-caret-position="170">
+          <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
           <folding>
-            <element signature="docComment;method#Factory#0;class#Factory#0" expanded="false" />
-            <element signature="method#Factory#0;class#Factory#0" expanded="false" />
-            <element signature="method#run#0;class#Factory#0" expanded="false" />
-            <element signature="method#initListOfLines#0;class#Factory#0" expanded="false" />
-            <element signature="method#initStages#0;class#Factory#0" expanded="false" />
+            <element signature="method#LinkedList#0;class#LinkedList#0" expanded="false" />
+            <element signature="method#getObject#0;class#LinkedList#0" expanded="false" />
+            <element signature="method#add_to_head#0;class#LinkedList#0" expanded="false" />
+            <element signature="method#add_to_tail#0;class#LinkedList#0" expanded="false" />
+            <element signature="method#add#0;class#LinkedList#0" expanded="false" />
+            <element signature="e#2896#2951#0" expanded="false" />
+            <element signature="e#3394#3395#0" expanded="true" />
+            <element signature="e#3424#3425#0" expanded="true" />
+            <element signature="method#insert#0;class#LinkedList#0" expanded="false" />
+            <element signature="method#pop#0;class#LinkedList#0" expanded="false" />
+            <element signature="method#deleteHead#0;class#LinkedList#0" expanded="false" />
+            <element signature="method#remove#0;class#LinkedList#0" expanded="false" />
+            <element signature="method#getHead#0;class#LinkedList#0" expanded="false" />
+            <element signature="method#getTail#0;class#LinkedList#0" expanded="false" />
+            <element signature="method#Listerator#0;class#Listerator#0;class#LinkedList#0" expanded="false" />
+            <element signature="method#remove#0;class#Listerator#0;class#LinkedList#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Stage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="107" column="25" lean-forward="true" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
+        <state relative-caret-position="172">
+          <caret line="98" column="37" lean-forward="true" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="37" />
           <folding>
             <element signature="docComment;class#Stage#0" expanded="false" />
             <element signature="method#Stage#0;class#Stage#0" expanded="false" />
+            <element signature="method#processItem#0;class#Stage#0" expanded="false" />
             <element signature="method#ejectItem#0;class#Stage#0" expanded="false" />
+            <element signature="method#compareTo#0;class#Stage#0" expanded="false" />
             <element signature="method#getTimeToComplete#0;class#Stage#0" expanded="false" />
+            <element signature="method#setNextQueue#0;class#Stage#0" expanded="false" />
             <element signature="method#setPreviousQueue#0;class#Stage#0" expanded="false" />
-            <element signature="method#setnextQueue#0;class#Stage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PA3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Factory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;method#Factory#0;class#Factory#0" expanded="false" />
+            <element signature="method#Factory#0;class#Factory#0" expanded="false" />
+            <element signature="method#run#0;class#Factory#0" expanded="false" />
+            <element signature="method#stockUp#0;class#Factory#0" expanded="false" />
+            <element signature="method#initListOfLines#0;class#Factory#0" expanded="false" />
+            <element signature="method#initStages#0;class#Factory#0" expanded="false" />
+            <element signature="method#printStages#0;class#Factory#0" expanded="false" />
           </folding>
         </state>
       </provider>

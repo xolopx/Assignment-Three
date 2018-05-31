@@ -10,9 +10,9 @@ public class WaitingLine<T>{
     //This is flag indicating the state of the WaitingLine. Empty(0), Has Room(1) or Full(2).
     protected int state;
 
-    WaitingLine(int initialLength){
+    WaitingLine(int capacity){
 
-        theContents = new ArrayList<>(initialLength);
+        theContents = new ArrayList<>(capacity);
         state = 0;                                      //initially state is empty.
 
     }
@@ -41,5 +41,14 @@ public class WaitingLine<T>{
     //returns an item
     public T getItem(int index){
         return theContents.get(index);
+    }
+    public T takeItem(int index){
+        //store temp for returning.
+        T temp = getItem(index);
+        //remove the item from the list.
+        removeItem(index);
+        //return the item.
+        return temp;
+
     }
 }

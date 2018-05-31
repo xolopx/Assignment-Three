@@ -13,13 +13,13 @@ import java.util.PriorityQueue;
 public class Stage implements Comparable<Stage> {
 
     //This is the item that's getting processed.
-    private Item itemProcessing;
+    private Item stageItem;
     //This indicates whether or not the Stage is starving (0), blocked (1) or processing (2).
     private int state;
     //This is a pointer to the next WaitingLine/Queue.
-    private ArrayList<Item> nextQueue;
+    private WaitingLine<Item> nextQueue;
     //This is a pointer to the previous WaitingLine/Queue.
-    private ArrayList<Item> previousQueue;
+    private WaitingLine<Item> previousQueue;
     //This is time at which the item being processed will complete.
     private double timeToComplete;
 
@@ -29,7 +29,7 @@ public class Stage implements Comparable<Stage> {
         //initially state is starving.
         state = 0;
         //initially there is no item in any stages.
-        itemProcessing = null;
+        stageItem= null;
         //initially there is no item inside the stage so there's no time to complete.
         timeToComplete = 0;
     }
@@ -37,20 +37,21 @@ public class Stage implements Comparable<Stage> {
     public void processItem(Item itemToProcess, double theTime){
         //if state is already processing cannot take another item.
         if(state != 2) {
-            itemProcessing = itemToProcess;
-            timeToComplete = itemProcessing.getTime() + theTime;
-
-            System.out.println("Item will complete at: " + timeToComplete);
+            stageItem= itemToProcess;
+            timeToComplete = stageItem.getTime() + theTime;
         }else{
             System.out.println("Homes you just tried to put an item into a stage that's processing. Check yourself.");
         }
     }
-    //Passes on the item that has been processed.
-    //TO BE MODIFIED. CURRENTLY RETURNS VOID.
+    //Ejects the item from the stage. Sets Item inside stage to null and returns the item that was being processed.
+    //Resets the time to completion to zero indicating that the stage is not processing an item.
     public Item ejectItem(){
-        if(itemProcessing!=null){
-            Item temp = itemProcessing;
-            itemProcessing = null;
+        if(stageItem!=null){
+            //stored temporary copy of the item that was being processed.
+            Item temp = stageItem;
+            //set the item inside the stage to zero
+            stageItem = null;
+            //set the time to complete
             return temp;
         }
         else{
@@ -65,52 +66,70 @@ public class Stage implements Comparable<Stage> {
          * an item has no item processing inside it right now, its pointer will be set to null and timeToCompletion will
          * be set to 0.
          * -1 - less than
-         * 0 - equal to
-         * 1 - greater than
+         *  1 - greater than
          */
 
-
-        //If the stage currently has no item being processed return less than. It has no priority.
-        if(itemProcessing == null){
+        //Greater than cases. Includes equal to event.
+        if(timeToComplete == stageToCheck.getTimeToComplete() || timeToComplete < stageToCheck.getTimeToComplete()){
             return -1;
-        }else if(stageToCheck == null){
+        }else{
             return 1;
         }
-        //Time of stage was less than other so priority is higher. or equal to (highly unlikely).
-        else if(timeToComplete <= stageToCheck.getTimeToComplete()){
-            return 1;
-        }
-        //time of stage was greater so it has less priority.
-        else if(timeToComplete > stageToCheck.getTimeToComplete()){
-            return -1;
-        }
-        //If we get to this stage something strange happened.
-        else {
-            System.out.println("How did you get here? What happened in compareTo that things went so wrong.");
-            return 1;
-        }
-
 
     }
     //Returns the time when the item being processed will be complete by the stage.
-    public double getTimeToComplete(){
-       if(itemProcessing != null){
-           return timeToComplete;
-       }else{
-           //There was no item stored in the
-           System.out.println("You just tried to get a completion time for a stage that has no item in it. Panic.");
-           return -1;
-       }
-
-    }
-    //set the previous array list.
-    public void setPreviousQueue(ArrayList<Item> prevList) {previousQueue = prevList;}
-    //set the next queue.
-    public void setnextQueue(ArrayList<Item> nextList){nextQueue = nextList;}
+    public double getTimeToComplete(){ return timeToComplete; }
     //Updates the time to complete for an item because another stage will have completed processing.
-    public void updateTimeToComplete(double completedItemTime){
-        timeToComplete -= completedItemTime;
+    public void updateTimeToComplete(double newTime){
+        timeToComplete = newTime;
     }
+    /**QUEUES*/
+    //set the next queue.
+    public void setNextQueue(WaitingLine<Item> nextList){nextQueue = nextList;}
+    //set the previous array list.
+    public void setPreviousQueue(WaitingLine<Item> prevList) {previousQueue = prevList;}
+    //Returns the previous queue.
+    public WaitingLine<Item> getPreviousQueue(){
+        return previousQueue;
+    }
+    //Returns the next queue.
+    public WaitingLine<Item> getNextQueue(){
+        return nextQueue;
+    }
+    //Does the Stage have a previous?
+    public boolean hasPrevious(){
+        if(previousQueue == null){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+    //Does the stage have a next queue?
+    public boolean hasNext(){
+        if(nextQueue == null){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+    /**STATE*/
+    //returns the state of the stage.
+    // 0 = starving
+    // 1 = blocked (implies that the stage has an item in it and cannot get rid of it.
+    // 2 = processing.
+    public int getState(){
+        return state;
+    }
+    //sets the state of the stage.
+    public void setState(int theState){
+        state = theState;
+    }
+
+
+
+
 
 
 }
