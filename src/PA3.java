@@ -11,10 +11,9 @@ public class PA3 {
         //Read these in with a Scanner later.
         double M = 2;        //mean, for time calculation.
         double N = 2;        //range, for time calculation.
-        double productionTime = 100;
+        double productionTime = 10;
         int queueLength = 5;
         int numStages = 2;
-
 
         Factory one = new Factory(productionTime,M,N,queueLength, numStages);
 

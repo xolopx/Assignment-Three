@@ -28,40 +28,35 @@ public class Factory {
     //An arrayList of queues. The waiting lines feed the stages that they precede.
     private ArrayList<WaitingLine<Item>> listOfLines;
     //The stock feeds the first stage.
-    private WaitingLine<Item> stock = new WaitingLine<>(1);
+    private Stock stock;
     //An priority queue of the stages in the factory.
     private SortedList<Stage> stages;
 
 
 
     /**Constructor initializes the necessary components of the factory.*/
-    Factory(double runTime, double mean, double range, int ql, int numStages){
+    Factory(double runTime, double mean, double range, int ql, int numStages) {
 
         productionTime = runTime;
         M  = mean;
         N = range;
-        queueLength = ql;
         theTime = 0;
-        stockUp(1);                                   //initially have one item in stock.
+        queueLength = ql;
+        stock = new Stock(mean, range);
         initListOfLines(queueLength, 1);     //Initialized before stages as stages point to the queues.
         initStages(numStages);                          //populate stages collection with stages.
     }
 
     //This runs the factory.
     public void run() {
-       updateFactory();     //sets all the shit.
-       stages.sort();
-       printStages();
-    }
-    //append Items to the stock by the integer value specified.
-    private void stockUp(int i){
-       //declare a new item
-        Item newItem;
-        //Populate the stock.
-        for(int j = 0;j<i;j++){
-            newItem = new Item(M,N);
-            stock.addItem(newItem);
+
+        while(theTime < productionTime){
+            updateFactory();     //sets all the shit. This is your big boi.
+            printStages();
         }
+
+
+
     }
     //returns the statistics object for this factory.
     public Stats getStatistics(){
@@ -78,7 +73,7 @@ public class Factory {
         //populate the list of lines with new lines.
         for(int i = 0; i<numQueues;i++){
             //instantiate the new line
-            newLine = new WaitingLine<>(queueLength);
+             newLine = new WaitingLine<>(queueLength);
             //and place it into the list of lines.
             listOfLines.add(newLine);
         }
@@ -106,7 +101,7 @@ public class Factory {
     //prints out the completion times for the priority queue of stages.
     public void printStages(){
         Iterator<Stage> stagesIterator = stages.iterator();
-        System.out.println("\n Printing " + stages.getSize() + " stages. Out of order. \n");
+        System.out.println("\n Printing " + stages.getSize() + " stages. \n");
         while(stagesIterator.hasNext()){
             //Right now poll() is popping the highest priority stage of list .
             System.out.println(stagesIterator.next().getTimeToComplete());
@@ -115,103 +110,100 @@ public class Factory {
 
     //NEEDS WORK: Populate stages with dummy items. This is going to become way more complex and occur at the
     // beginning of each snapshot.
-    public void updateFactory(){
-        //This flag indicates whether or not changes are still being made.
-        boolean changeFlag = true;
+    public void updateFactory() {
+        //sort the stages. Now the head is the highest priority.
+        stages.sort();
         //Set up placeholder for priority stage.
         Stage priorityStage = stages.getHead();
-        //Update the global time based on the priority stage.
-        theTime += priorityStage.getTimeToComplete();
-        //reset the prioritised stage so it will now not have priority. Ever.
+        //Advance the global time to the head of the global time.
+        theTime = priorityStage.getTimeToComplete();
+        //reset the heads time so that it cannot have priority.
         priorityStage.updateTimeToComplete(-1);
 
-        //Now scan for changes
-        do {
+        //This flag indicates whether or not changes are still being made to the stages.
+        boolean changeFlag;
 
-            /**Fix Starvation*/
+        //Do while loop will continually update the stages until no more changes can be made.
+        // At this point the function will end.
+        //There is no case for processing as things that are processing must wait for next time incrementation.
+        do {
+            //Reset the changeFlag to false at the start of each loop. If I change it made it will go to true.
+            changeFlag = false;
+
+
+            /**FIX STARVATION*/
             //Iterator for starvation update. Must create new one so it resets.
             Iterator<Stage> starvationIterator = stages.iterator();
-            //Go through stages and update them.
-            while(starvationIterator.hasNext()){
-                switch(starvationIterator.next().getState()){
-                    //STARVING
-                    case 0:
+            //reusable stage placeholder to test on.
+            Stage focusStage;
+            //Go through stages and update them removing starvation where possible.
+            while (starvationIterator.hasNext()) {
 
-                    break;
+                //Hold the stage that changes are being made on.
+                focusStage = starvationIterator.next();
+                //hold previous queue of stage
+                WaitingLine<Item> prevQ = focusStage.getPreviousQueue();
 
-                    //BLOCKED
-                    case 1:
+                //if the stage is starving and it's not the first stage.
+                if (focusStage.getState() == -1 && focusStage.hasPrevious()) {
 
-                    break;
-
-                    //chill
-                    default:
-
-                    break;
-
-
+                    //Check if previous queue has food in it.
+                    if (!prevQ.isEmpty()) {
+                        //take from the start of the queue.
+                        focusStage.processItem(prevQ.takeItem(0), theTime);
+                        //A stage got fed so change occurred.
+                        changeFlag = true;
+                    }
+                    //ELSE the queue was empty so keep on starving poor stage boi.
                 }
-            }
+                //else if it's starving and it's the first stage take from stock.
+                else if (focusStage.getState() == -1) {
+                    //stock will automatically replenish.
+                    focusStage.processItem(stock.takeItem(0), productionTime);
+                    //stage got fed so change occurred.
+                    changeFlag = true;
+                }
+            }//END STARVATION WHILE.
 
-            /**Fix Blockages*/
+            /*FIX BLOCKAGES*/
             //Iterator for blockage update. Must create new one so it resets.
             Iterator<Stage> blockageIterator = stages.iterator();
-            //Go through stages and update them.
-            while(blockageIterator.hasNext()){
+            //Go through stages and update them removing blockages where possible.
+            while (blockageIterator.hasNext()) {
 
-            }
+                //Hold the stage that changes are being made on.
+                focusStage = blockageIterator.next();
 
-
-
-
-
-
-        }while(changeFlag); //Continue loop until changes settle.
-
-        //Update global time based on priority item.
-
-        /*Starting by updating the priority stage
-        //Pass the completed item to next queue if the stage isn't the last stage in production line.
-        if(stages.getHead().getNextQueue()!=null){
-            //give the item to the queue if it isn't full
-            if(!stages.getHead().getNextQueue().isFull()){
-                //pass on the item
-                stages.getHead().getNextQueue().addItem(stages.getHead().ejectItem());
-
-                //if the stage was able to pass on its completed item it now wants another one.
-                //If this isn't the first stage it will have a previous queue.
-                if(stages.getHead().getPreviousQueue()!=null){
-                    //if the queue is not empty
-                    if(stages.getHead().getPreviousQueue().isEmpty()){
-                        //take the item at the head of the queue and give it to the stage.
-                        stages.getHead().processItem(stages.getHead().getPreviousQueue().takeItem(queueLength),productionTime);
+                //if the stage is blocked and it's not the last stage.
+                if (focusStage.getState() == 0 && focusStage.hasNext()) {
+                    //holds next queue of stage.
+                    WaitingLine<Item> nextQ = focusStage.getNextQueue();
+                    //Check if next queue has room in it.
+                    if (!nextQ.isFull()) {
+                        //append the processed item into the end of the next queue.
+                        nextQ.addItem(focusStage.ejectItem());
+                        //ejection so change was made.
+                        changeFlag = true;
                     }
-                    //else it is empty and now yall gonna STARVE.
-                    else{
-                        stages.getHead().setState(0);
-                    }
+                    //ELSE the queue was empty so keep on starving poor stage boi.
                 }
-                //else if it is the first stage it backs onto stock and yall can just take it.
-                else{
-                    stages.getHead().processItem(stock.getItem(0),productionTime);
-                    stockUp(1);
+                //If it's the last stage and it's blocked just eject.
+                else if (focusStage.getState() == 0) {
+                    focusStage.ejectItem();
+                    //a change was made.
+                    changeFlag = true;
                 }
-            }
-            //if the queue is full then the stage is BLOCKED. Starving(0), blocked(1), processing(2).
-            else{
-                //sets state to blocked.
-                stages.getHead().setState(1);
-            }
-        }*/
+            }//END BLOCKAGE WHILE.
 
-
-
+        } while (changeFlag); //END DO-WHILE
 
     }
 
-
-
 }
+
+
+
+
 
 
 

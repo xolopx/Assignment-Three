@@ -14,7 +14,9 @@ public class Stage implements Comparable<Stage> {
 
     //This is the item that's getting processed.
     private Item stageItem;
-    //This indicates whether or not the Stage is starving (0), blocked (1) or processing (2).
+    //This indicates whether or not the Stage is STARVING (-1) or BLOCKED (0) or PROCESSING (1).
+    // Starving implies it is empty and blocked implies it is full and complete. Processing means it's full but item
+    // is not complete yet.
     private int state;
     //This is a pointer to the next WaitingLine/Queue.
     private WaitingLine<Item> nextQueue;
@@ -27,35 +29,40 @@ public class Stage implements Comparable<Stage> {
     //Constructor.
     Stage(){
         //initially state is starving.
-        state = 0;
+        state = -1;
         //initially there is no item in any stages.
         stageItem= null;
-        //initially there is no item inside the stage so there's no time to complete.
-        timeToComplete = 0;
+        //initially there is no item inside the stage so there's no time to complete. -1 no item inside.
+        timeToComplete = -1;
     }
     //Puts in a new item to be processed by the Stage and records the time when it will finish processing.
     public void processItem(Item itemToProcess, double theTime){
-        //if state is already processing cannot take another item.
-        if(state != 2) {
+        //State is starving so it can take more food.
+        if(state==-1) {
             stageItem= itemToProcess;
             timeToComplete = stageItem.getTime() + theTime;
+            //stage is now eating.
+            state = 1;
         }else{
             System.out.println("Homes you just tried to put an item into a stage that's processing. Check yourself.");
         }
     }
-    //Ejects the item from the stage. Sets Item inside stage to null and returns the item that was being processed.
-    //Resets the time to completion to zero indicating that the stage is not processing an item.
+    //Removes the item inside the stage and returns it. Resets timer to -1 and state to -1 indicating
+    // that it's starving.
     public Item ejectItem(){
         if(stageItem!=null){
             //stored temporary copy of the item that was being processed.
             Item temp = stageItem;
             //set the item inside the stage to zero
             stageItem = null;
-            //set the time to complete
+            //set the time of stage to complete to -1 because it's empty.
+            timeToComplete = - 1;
+            //State is now starving as it's empty.
+            state = -1;
             return temp;
         }
         else{
-            System.out.println("There was not item being processed in this stage to be passed on.");
+            System.out.println("There was not item being processed in this stage to be passed on. Null was returned.");
             return null;
         }
     }
@@ -116,12 +123,9 @@ public class Stage implements Comparable<Stage> {
     }
     /**STATE*/
     //returns the state of the stage.
-    // 0 = starving
-    // 1 = blocked (implies that the stage has an item in it and cannot get rid of it.
-    // 2 = processing.
-    public int getState(){
-        return state;
-    }
+    //STARVING = true; (stage is empty)
+    //BLOCKED = false; (stage is full)
+    public int getState(){return state;}
     //sets the state of the stage.
     public void setState(int theState){
         state = theState;
