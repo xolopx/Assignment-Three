@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a21bd138-4f22-4856-8b68-de1755ae76a5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Stock.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Assignment-Three/Factory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Assignment-Three/WaitingLine.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TimeTrack.xlsx" afterPath="$PROJECT_DIR$/TimeTrack.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Factory.java" afterPath="$PROJECT_DIR$/src/Factory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PA3.java" afterPath="$PROJECT_DIR$/src/PA3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Stage.java" afterPath="$PROJECT_DIR$/src/Stage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WaitingLine.java" afterPath="$PROJECT_DIR$/src/WaitingLine.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +26,8 @@
       <file leaf-file-name="PA3.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PA3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="483">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -42,14 +36,17 @@
       <file leaf-file-name="Factory.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Factory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="80" column="56" lean-forward="false" selection-start-line="80" selection-start-column="56" selection-end-line="80" selection-end-column="56" />
+            <state relative-caret-position="379">
+              <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding>
                 <element signature="docComment;method#Factory#0;class#Factory#0" expanded="false" />
                 <element signature="method#Factory#0;class#Factory#0" expanded="true" />
-                <element signature="method#run#0;class#Factory#0" expanded="true" />
+                <element signature="method#initWaitingLines#0;class#Factory#0" expanded="true" />
+                <element signature="method#initStages#0;class#Factory#0" expanded="true" />
+                <element signature="e#3448#3474#0" expanded="false" />
+                <element signature="method#printStages#0;class#Factory#0" expanded="true" />
                 <element signature="method#updateFactory#0;class#Factory#0" expanded="true" />
-                <element signature="e#4547#4632#0" expanded="false" />
+                <element signature="e#5174#5259#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -58,13 +55,11 @@
       <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="196" column="0" lean-forward="false" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
+            <state relative-caret-position="1001">
+              <caret line="177" column="51" lean-forward="false" selection-start-line="177" selection-start-column="51" selection-end-line="177" selection-end-column="51" />
               <folding>
                 <element signature="e#2896#2951#0" expanded="false" />
-                <element signature="method#getHead#0;class#LinkedList#0" expanded="true" />
-                <element signature="e#6680#6681#0" expanded="true" />
-                <element signature="method#next#0;class#Listerator#0;class#LinkedList#0" expanded="true" />
+                <element signature="class#Listerator#0;class#LinkedList#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -73,10 +68,23 @@
       <file leaf-file-name="Stock.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Stock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+            <state relative-caret-position="368">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#Stock#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Item.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="e#407#408#0" expanded="true" />
+                <element signature="method#timeGenerator#0;class#Item#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,7 +94,7 @@
         <entry file="file://$PROJECT_DIR$/src/Stage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="483">
-              <caret line="37" column="23" lean-forward="true" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+              <caret line="37" column="23" lean-forward="false" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
               <folding>
                 <element signature="docComment;class#Stage#0" expanded="false" />
                 <element signature="method#getTimeToComplete#0;class#Stage#0" expanded="false" />
@@ -103,8 +111,8 @@
       <file leaf-file-name="WaitingLine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WaitingLine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+            <state relative-caret-position="391">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#WaitingLine#0" expanded="false" />
               </folding>
@@ -125,9 +133,10 @@
     <findStrings>
       <find>WaitLine</find>
       <find>itemProcessing</find>
-      <find>itemProcessing</find>
       <find>size</find>
       <find>setnextQueue</find>
+      <find>listOfLines</find>
+      <find>waitng</find>
     </findStrings>
     <replaceStrings>
       <replace>setNextQueue</replace>
@@ -155,10 +164,10 @@
         <option value="$PROJECT_DIR$/src/Node.java" />
         <option value="$PROJECT_DIR$/src/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/Stock.java" />
-        <option value="$PROJECT_DIR$/src/PA3.java" />
         <option value="$PROJECT_DIR$/src/WaitingLine.java" />
-        <option value="$PROJECT_DIR$/src/Factory.java" />
         <option value="$PROJECT_DIR$/src/Stage.java" />
+        <option value="$PROJECT_DIR$/src/PA3.java" />
+        <option value="$PROJECT_DIR$/src/Factory.java" />
       </list>
     </option>
   </component>
@@ -192,6 +201,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -221,8 +232,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -524,19 +533,19 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.25625" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="-1919" y="31" width="958" height="1008" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.25625" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="-959" y="31" width="958" height="1008" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="-959" y="31" width="958" height="1008" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="-959" y="31" width="958" height="1008" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1671875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="-959" y="31" width="958" height="1008" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1671875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="-959" y="31" width="958" height="1008" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.39957035" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="-1919" y="31" width="958" height="1008" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -587,15 +596,25 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/PA3.java</url>
-          <line>20</line>
+          <url>file://$PROJECT_DIR$/src/Factory.java</url>
+          <line>125</line>
           <properties />
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="8" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="focusStage" />
+        <watch expression="((Factory)this).stages.head_ptr_.next.data" custom="Factory" />
+        <watch expression="((Factory)this).stages.head_ptr_.next.next.data" custom="Factory" />
+        <watch expression="changeFlag" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -608,13 +627,12 @@
           <caret line="98" column="37" lean-forward="true" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="37" />
           <folding>
             <element signature="docComment;class#Stage#0" expanded="false" />
-            <element signature="method#Stage#0;class#Stage#0" expanded="true" />
-            <element signature="method#processItem#0;class#Stage#0" expanded="true" />
             <element signature="method#getTimeToComplete#0;class#Stage#0" expanded="false" />
             <element signature="docComment;method#setNextQueue#0;class#Stage#0" expanded="false" />
             <element signature="method#setNextQueue#0;class#Stage#0" expanded="false" />
             <element signature="method#setPreviousQueue#0;class#Stage#0" expanded="false" />
             <element signature="docComment;method#getState#0;class#Stage#0" expanded="false" />
+            <element signature="method#getState#0;class#Stage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -626,9 +644,12 @@
           <folding>
             <element signature="docComment;method#Factory#0;class#Factory#0" expanded="false" />
             <element signature="method#Factory#0;class#Factory#0" expanded="true" />
-            <element signature="method#run#0;class#Factory#0" expanded="true" />
+            <element signature="method#initWaitingLines#0;class#Factory#0" expanded="true" />
+            <element signature="method#initStages#0;class#Factory#0" expanded="true" />
+            <element signature="e#3448#3474#0" expanded="false" />
+            <element signature="method#printStages#0;class#Factory#0" expanded="true" />
             <element signature="method#updateFactory#0;class#Factory#0" expanded="true" />
-            <element signature="e#4547#4632#0" expanded="false" />
+            <element signature="e#5174#5259#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -648,9 +669,12 @@
           <folding>
             <element signature="docComment;method#Factory#0;class#Factory#0" expanded="false" />
             <element signature="method#Factory#0;class#Factory#0" expanded="true" />
-            <element signature="method#run#0;class#Factory#0" expanded="true" />
+            <element signature="method#initWaitingLines#0;class#Factory#0" expanded="true" />
+            <element signature="method#initStages#0;class#Factory#0" expanded="true" />
+            <element signature="e#3448#3474#0" expanded="false" />
+            <element signature="method#printStages#0;class#Factory#0" expanded="true" />
             <element signature="method#updateFactory#0;class#Factory#0" expanded="true" />
-            <element signature="e#4547#4632#0" expanded="false" />
+            <element signature="e#5174#5259#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -685,13 +709,12 @@
           <caret line="107" column="25" lean-forward="true" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
           <folding>
             <element signature="docComment;class#Stage#0" expanded="false" />
-            <element signature="method#Stage#0;class#Stage#0" expanded="true" />
-            <element signature="method#processItem#0;class#Stage#0" expanded="true" />
             <element signature="method#getTimeToComplete#0;class#Stage#0" expanded="false" />
             <element signature="docComment;method#setNextQueue#0;class#Stage#0" expanded="false" />
             <element signature="method#setNextQueue#0;class#Stage#0" expanded="false" />
             <element signature="method#setPreviousQueue#0;class#Stage#0" expanded="false" />
             <element signature="docComment;method#getState#0;class#Stage#0" expanded="false" />
+            <element signature="method#getState#0;class#Stage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -710,13 +733,12 @@
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#Stage#0" expanded="false" />
-            <element signature="method#Stage#0;class#Stage#0" expanded="true" />
-            <element signature="method#processItem#0;class#Stage#0" expanded="true" />
             <element signature="method#getTimeToComplete#0;class#Stage#0" expanded="false" />
             <element signature="docComment;method#setNextQueue#0;class#Stage#0" expanded="false" />
             <element signature="method#setNextQueue#0;class#Stage#0" expanded="false" />
             <element signature="method#setPreviousQueue#0;class#Stage#0" expanded="false" />
             <element signature="docComment;method#getState#0;class#Stage#0" expanded="false" />
+            <element signature="method#getState#0;class#Stage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -735,9 +757,12 @@
           <folding>
             <element signature="docComment;method#Factory#0;class#Factory#0" expanded="false" />
             <element signature="method#Factory#0;class#Factory#0" expanded="true" />
-            <element signature="method#run#0;class#Factory#0" expanded="true" />
+            <element signature="method#initWaitingLines#0;class#Factory#0" expanded="true" />
+            <element signature="method#initStages#0;class#Factory#0" expanded="true" />
+            <element signature="e#3448#3474#0" expanded="false" />
+            <element signature="method#printStages#0;class#Factory#0" expanded="true" />
             <element signature="method#updateFactory#0;class#Factory#0" expanded="true" />
-            <element signature="e#4547#4632#0" expanded="false" />
+            <element signature="e#5174#5259#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -757,9 +782,12 @@
           <folding>
             <element signature="docComment;method#Factory#0;class#Factory#0" expanded="false" />
             <element signature="method#Factory#0;class#Factory#0" expanded="true" />
-            <element signature="method#run#0;class#Factory#0" expanded="true" />
+            <element signature="method#initWaitingLines#0;class#Factory#0" expanded="true" />
+            <element signature="method#initStages#0;class#Factory#0" expanded="true" />
+            <element signature="e#3448#3474#0" expanded="false" />
+            <element signature="method#printStages#0;class#Factory#0" expanded="true" />
             <element signature="method#updateFactory#0;class#Factory#0" expanded="true" />
-            <element signature="e#4547#4632#0" expanded="false" />
+            <element signature="e#5174#5259#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -792,13 +820,12 @@
           <caret line="78" column="103" lean-forward="false" selection-start-line="78" selection-start-column="103" selection-end-line="78" selection-end-column="103" />
           <folding>
             <element signature="docComment;class#Stage#0" expanded="false" />
-            <element signature="method#Stage#0;class#Stage#0" expanded="true" />
-            <element signature="method#processItem#0;class#Stage#0" expanded="true" />
             <element signature="method#getTimeToComplete#0;class#Stage#0" expanded="false" />
             <element signature="docComment;method#setNextQueue#0;class#Stage#0" expanded="false" />
             <element signature="method#setNextQueue#0;class#Stage#0" expanded="false" />
             <element signature="method#setPreviousQueue#0;class#Stage#0" expanded="false" />
             <element signature="docComment;method#getState#0;class#Stage#0" expanded="false" />
+            <element signature="method#getState#0;class#Stage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -817,13 +844,12 @@
           <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
           <folding>
             <element signature="docComment;class#Stage#0" expanded="false" />
-            <element signature="method#Stage#0;class#Stage#0" expanded="true" />
-            <element signature="method#processItem#0;class#Stage#0" expanded="true" />
             <element signature="method#getTimeToComplete#0;class#Stage#0" expanded="false" />
             <element signature="docComment;method#setNextQueue#0;class#Stage#0" expanded="false" />
             <element signature="method#setNextQueue#0;class#Stage#0" expanded="false" />
             <element signature="method#setPreviousQueue#0;class#Stage#0" expanded="false" />
             <element signature="docComment;method#getState#0;class#Stage#0" expanded="false" />
+            <element signature="method#getState#0;class#Stage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -892,13 +918,6 @@
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_121/src.zip!/java/lang/Comparable.java" />
     <entry file="file://$PROJECT_DIR$/../../assignment 2 source files/PlanarShape.java" />
     <entry file="file://$PROJECT_DIR$/../../assignment 2 source files/Point.java" />
-    <entry file="file://$PROJECT_DIR$/src/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_121/src.zip!/java/util/ArrayList.java" />
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/java/util/Iterator.java" />
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/java/util/PriorityQueue.java" />
@@ -906,16 +925,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="method#Node#0;class#Node#0" expanded="false" />
-            <element signature="method#Node#1;class#Node#0" expanded="false" />
-            <element signature="method#set_data#0;class#Node#0" expanded="false" />
-            <element signature="method#set_next#0;class#Node#0" expanded="false" />
-            <element signature="method#set_previous#0;class#Node#0" expanded="false" />
-            <element signature="method#get_data#0;class#Node#0" expanded="false" />
-            <element signature="method#get_previous#0;class#Node#0" expanded="false" />
-            <element signature="method#get_next#0;class#Node#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -944,38 +953,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WaitingLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-          <folding>
-            <element signature="docComment;class#WaitingLine#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
-          <folding>
-            <element signature="docComment;class#Stock#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PA3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Stage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
-          <caret line="37" column="23" lean-forward="true" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+          <caret line="37" column="23" lean-forward="false" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
           <folding>
             <element signature="docComment;class#Stage#0" expanded="false" />
             <element signature="method#getTimeToComplete#0;class#Stage#0" expanded="false" />
@@ -990,27 +971,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="196" column="0" lean-forward="false" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="0" />
+        <state relative-caret-position="1001">
+          <caret line="177" column="51" lean-forward="false" selection-start-line="177" selection-start-column="51" selection-end-line="177" selection-end-column="51" />
           <folding>
             <element signature="e#2896#2951#0" expanded="false" />
-            <element signature="method#getHead#0;class#LinkedList#0" expanded="true" />
-            <element signature="e#6680#6681#0" expanded="true" />
-            <element signature="method#next#0;class#Listerator#0;class#LinkedList#0" expanded="true" />
+            <element signature="class#Listerator#0;class#LinkedList#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="method#timeGenerator#0;class#Item#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Stock#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WaitingLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#WaitingLine#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PA3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Factory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="80" column="56" lean-forward="false" selection-start-line="80" selection-start-column="56" selection-end-line="80" selection-end-column="56" />
+        <state relative-caret-position="379">
+          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding>
             <element signature="docComment;method#Factory#0;class#Factory#0" expanded="false" />
             <element signature="method#Factory#0;class#Factory#0" expanded="true" />
-            <element signature="method#run#0;class#Factory#0" expanded="true" />
+            <element signature="method#initWaitingLines#0;class#Factory#0" expanded="true" />
+            <element signature="method#initStages#0;class#Factory#0" expanded="true" />
+            <element signature="e#3448#3474#0" expanded="false" />
+            <element signature="method#printStages#0;class#Factory#0" expanded="true" />
             <element signature="method#updateFactory#0;class#Factory#0" expanded="true" />
-            <element signature="e#4547#4632#0" expanded="false" />
+            <element signature="e#5174#5259#0" expanded="false" />
           </folding>
         </state>
       </provider>

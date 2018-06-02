@@ -24,9 +24,11 @@ public class Factory {
     private Stats stats = new Stats();
     //the queue length
     private int queueLength;
+    //the number of queues.
+    private int numQueues;
 
     //An arrayList of queues. The waiting lines feed the stages that they precede.
-    private ArrayList<WaitingLine<Item>> listOfLines;
+    private ArrayList<WaitingLine<Item>> waitingLines;
     //The stock feeds the first stage.
     private Stock stock;
     //An priority queue of the stages in the factory.
@@ -35,15 +37,16 @@ public class Factory {
 
 
     /**Constructor initializes the necessary components of the factory.*/
-    Factory(double runTime, double mean, double range, int ql, int numStages) {
+    Factory(double runTime, double mean, double range, int ql, int numStages, int nQ) {
 
         productionTime = runTime;
         M  = mean;
         N = range;
         theTime = 0;
         queueLength = ql;
+        numQueues = nQ;
         stock = new Stock(mean, range);
-        initListOfLines(queueLength, 1);     //Initialized before stages as stages point to the queues.
+        initWaitingLines(queueLength, nQ);     //Initialized before stages as stages point to the queues.
         initStages(numStages);                          //populate stages collection with stages.
     }
 
@@ -63,40 +66,46 @@ public class Factory {
         return stats;
     }
     //Populates the queue list with queues. Queues must be initialized before stages.
-    private void initListOfLines(int queueLength, int numQueues){
+    private void initWaitingLines(int queueLength, int numQueues){
 
-        //Initialize the list of lines to getSize numQueue.
-        listOfLines = new ArrayList<>(numQueues);
+        //List's capacity is numQueues.
+        waitingLines = new ArrayList<>(numQueues);
         //Declare a new WaitingLine to go into the list of lines.
         WaitingLine<Item> newLine;
 
         //populate the list of lines with new lines.
         for(int i = 0; i<numQueues;i++){
-            //instantiate the new line
+            //Create a new waitingLine.
              newLine = new WaitingLine<>(queueLength);
             //and place it into the list of lines.
-            listOfLines.add(newLine);
+            waitingLines.add(newLine);
         }
     }
-    //Populates the a priority queue of stages with new stages and pointers to respective queues.
-    private void initStages(int listLength) {
-        //Instantiate the priority queue for the stages to live in.
+    //Populates the a priority queue of stages with new  stages and pointers to respective queues.
+    private void initStages(int numberOfStages) {
+        //Create a sorted list for the stages to live in.
         stages = new SortedList<>();
         //Declare a new stage.
         Stage newStage;
-        //populate the list of stages with stages!!
-        for(int i = 0; i<listLength;i++){
+        //populate the sortedList with stages.
+        for(int i = 0; i<numberOfStages;i++){
             //instantiate the new stage
             newStage  = new Stage();
             //and place it into the priority queue.
             stages.add(newStage);
         }
+        //Create an iterator to assign stages.
         Iterator<Stage> stageIterator = stages.iterator();
         //Set Stage 1 next queue.
-        stageIterator.next().setNextQueue(listOfLines.get(0));
+        Stage stage1 = stageIterator.next();
         //Set Stage 2 previous queue.
-        stageIterator.next().setPreviousQueue(listOfLines.get(0));
+        Stage stage2 = stageIterator.next();
 
+        //Assign Queues to stages.
+        //stage1 has no previous but does have a next.
+        stage1.setNextQueue(waitingLines.get(0));
+        //stage2 has no next but does have a previous.
+        stage2.setPreviousQueue(waitingLines.get(0));
     }
     //prints out the completion times for the priority queue of stages.
     public void printStages(){
@@ -115,9 +124,14 @@ public class Factory {
         stages.sort();
         //Set up placeholder for priority stage.
         Stage priorityStage = stages.getHead();
-        //Advance the global time to the head of the global time.
-        theTime = priorityStage.getTimeToComplete();
-        //reset the heads time so that it cannot have priority.
+        //This implies that it is the first run through. As such you don't want to update the time to -1. Bad.
+        if(theTime!=0) {
+            //Advance the global time to the head of the global time.
+            theTime = priorityStage.getTimeToComplete();
+            //reset the heads time so that it cannot have priority.
+        }
+        //Change the time of the highest priority stage to -1 so that if it get's blocked it doesn't keep being the
+        // highest priority.
         priorityStage.updateTimeToComplete(-1);
 
         //This flag indicates whether or not changes are still being made to the stages.

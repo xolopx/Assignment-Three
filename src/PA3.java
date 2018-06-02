@@ -14,8 +14,9 @@ public class PA3 {
         double productionTime = 10;
         int queueLength = 5;
         int numStages = 2;
+        int numQueues = 1;
 
-        Factory one = new Factory(productionTime,M,N,queueLength, numStages);
+        Factory one = new Factory(productionTime,M,N,queueLength, numStages, numQueues);
 
 
         one.run();
