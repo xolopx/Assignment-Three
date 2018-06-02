@@ -12,18 +12,28 @@ import java.util.PriorityQueue;
  */
 public class Stage implements Comparable<Stage> {
 
+    private String stageName;
     //This is the item that's getting processed.
     private Item stageItem;
     //This indicates whether or not the Stage is STARVING (-1) or BLOCKED (0) or PROCESSING (1).
     // Starving implies it is empty and blocked implies it is full and complete. Processing means it's full but item
     // is not complete yet.
     private int state;
+    //the mean used for time calculation
+    private double mean;
+    //the range used for time calculation
+    private double range;
     //This is a pointer to the next WaitingLine/Queue.
     private WaitingLine<Item> nextQueue;
     //This is a pointer to the previous WaitingLine/Queue.
     private WaitingLine<Item> previousQueue;
     //This is time at which the item being processed will complete.
     private double timeToComplete;
+    //this is the mode that determines the time calculation for the stage.
+    // 1, 2 or 3.
+    private int mode;
+    //time spent in production
+    private double timeProducing;
 
 
     //Constructor.
@@ -34,23 +44,72 @@ public class Stage implements Comparable<Stage> {
         stageItem= null;
         //initially there is no item inside the stage so there's no time to complete. -1 no item inside.
         timeToComplete = -1;
+        //default stage name
+        stageName = "Stage name not set";
+    }
+    //Constructor.
+    Stage(String name){
+        //initially state is starving.
+        state = -1;
+        //initially there is no item in any stages.
+        stageItem= null;
+        //initially there is no item inside the stage so there's no time to complete. -1 no item inside.
+        timeToComplete = -1;
+        //Name of the stage. Helps with debugging etc.
+        stageName = name;
+
+    }
+    //Constructor.
+    Stage(double m, double n){
+        //initially state is starving.
+        state = -1;
+        //initially there is no item in any stages.
+        stageItem= null;
+        //initially there is no item inside the stage so there's no time to complete. -1 no item inside.
+        timeToComplete = -1;
+        //Name of the stage. Helps with debugging etc.
+        stageName = "Stage name not set";
+        mean  = m;
+        range = n;
+
+
     }
     //Puts in a new item to be processed by the Stage and records the time when it will finish processing.
+    //mode determines which time calculation is used.
     public void processItem(Item itemToProcess, double theTime){
         //State is starving so it can take more food.
         if(state==-1) {
             stageItem= itemToProcess;
-            timeToComplete = stageItem.getTime() + theTime;
+            //calculation selection.
+            switch(mode){
+
+                //stages 0, 1, 3 & 5.
+                case 1:
+                    timeToComplete = theTime + (mean + range*(stageItem.getTime()-0.5));
+                break;
+                //Stages 2a & 4b.
+                case 2:
+                    timeToComplete = theTime + (2*mean + 2*range*(stageItem.getTime()-0.5));
+                break;
+                //Stages 2b & 4a.
+                case 3:
+                    timeToComplete = theTime + (mean + 0.5*range*(stageItem.getTime()-0.5));
+                break;
+            }
+            //give the item the time it is entering the stage.
+            stageItem.setTimeEntering(theTime);
+
             //stage is now eating.
             state = 1;
         }else{
-            System.out.println("Homes you just tried to put an item into a stage that's processing. Check yourself.");
+            System.out.println("Homes you just tried to put an item into a stage that's already full.");
         }
     }
     //Removes the item inside the stage and returns it. Resets timer to -1 and state to -1 indicating
     // that it's starving.
-    public Item ejectItem(){
+    public Item ejectItem(double theTime){
         if(stageItem!=null){
+            stageItem.setTimeLeaving(theTime);
             //stored temporary copy of the item that was being processed.
             Item temp = stageItem;
             //set the item inside the stage to zero
@@ -78,9 +137,9 @@ public class Stage implements Comparable<Stage> {
 
         //Greater than cases. Includes equal to event.
         if(timeToComplete == stageToCheck.getTimeToComplete() || timeToComplete < stageToCheck.getTimeToComplete()){
-            return -1;
-        }else{
             return 1;
+        }else{
+            return -1;
         }
 
     }
@@ -123,13 +182,28 @@ public class Stage implements Comparable<Stage> {
     }
     /**STATE*/
     //returns the state of the stage.
-    //STARVING = true; (stage is empty)
-    //BLOCKED = false; (stage is full)
+    //STARVING   = -1 (stage is empty).
+    //BLOCKED    =  0  (stage is complete and cannot eject item).
+    //PROCESSING =  1  (stage has an item in it but processing has not finished).
     public int getState(){return state;}
     //sets the state of the stage.
     public void setState(int theState){
         state = theState;
     }
+    //returns the name of the stage.
+    public String getName(){
+        return stageName;
+    }
+    //sets the stage name.
+    public void setName(String name){
+        stageName = name;
+    }
+    //set the mode of the stage. The mode determines the type of calculation for time.
+    public void setMode(int theMode){
+        mode = theMode;
+    }
+
+
 
 
 

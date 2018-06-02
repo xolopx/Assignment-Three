@@ -15,7 +15,7 @@ public class Stock extends WaitingLine<Item>{
     Stock(double M, double R){
         mean = M;
         range = R;
-        Item newItem = new Item(mean,range);
+        Item newItem = new Item();
         theContents = new ArrayList<>(1);
         theContents.add(newItem);
     }
@@ -23,7 +23,7 @@ public class Stock extends WaitingLine<Item>{
     //the stock.
     private void stockUp(){
         //declare a new item
-        Item newItem = new Item(mean,range);
+        Item newItem = new Item();
         //Put the new item in.
         addItem(newItem);
     }

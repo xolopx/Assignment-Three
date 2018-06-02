@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a21bd138-4f22-4856-8b68-de1755ae76a5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Factory.java" afterPath="$PROJECT_DIR$/src/Factory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PA3.java" afterPath="$PROJECT_DIR$/src/PA3.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TimeTrack.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/TimeTrack.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PA3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PA3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stock.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,7 +18,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Assignment_Three$Assignment_3.ic" NAME="Assignment 3 Coverage Results" MODIFIED="1527919245139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="FileColors">
     <fileColor scope="Non-Project Files (Material Oceanic)" color="2E3C43" />
     <fileColor scope="Non-Project Files (Material Darker)" color="323232" />
@@ -26,9 +32,8 @@
       <file leaf-file-name="PA3.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PA3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="391">
+              <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -36,31 +41,25 @@
       <file leaf-file-name="Factory.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Factory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state relative-caret-position="314">
+              <caret line="176" lean-forward="true" selection-start-line="176" selection-end-line="176" />
               <folding>
-                <element signature="docComment;method#Factory#0;class#Factory#0" expanded="false" />
-                <element signature="method#Factory#0;class#Factory#0" expanded="true" />
-                <element signature="method#initWaitingLines#0;class#Factory#0" expanded="true" />
-                <element signature="method#initStages#0;class#Factory#0" expanded="true" />
-                <element signature="e#3448#3474#0" expanded="false" />
-                <element signature="method#printStages#0;class#Factory#0" expanded="true" />
-                <element signature="method#updateFactory#0;class#Factory#0" expanded="true" />
-                <element signature="e#5174#5259#0" expanded="false" />
+                <element signature="docComment;method#Factory#0;class#Factory#0" />
+                <element signature="method#Factory#0;class#Factory#0" />
+                <element signature="method#run#0;class#Factory#0" />
+                <element signature="method#initWaitingLines#0;class#Factory#0" />
+                <element signature="method#initStages#0;class#Factory#0" />
+                <element signature="method#printStages#0;class#Factory#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LinkedList.java">
+      <file leaf-file-name="Stats.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Stats.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1001">
-              <caret line="177" column="51" lean-forward="false" selection-start-line="177" selection-start-column="51" selection-end-line="177" selection-end-column="51" />
-              <folding>
-                <element signature="e#2896#2951#0" expanded="false" />
-                <element signature="class#Listerator#0;class#LinkedList#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="425">
+              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -68,10 +67,10 @@
       <file leaf-file-name="Stock.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Stock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="595">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
-                <element signature="docComment;class#Stock#0" expanded="false" />
+                <element signature="docComment;class#Stock#0" />
               </folding>
             </state>
           </provider>
@@ -80,11 +79,17 @@
       <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="799">
+              <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
               <folding>
-                <element signature="e#407#408#0" expanded="true" />
-                <element signature="method#timeGenerator#0;class#Item#0" expanded="true" />
+                <element signature="e#1108#1109#0" expanded="true" />
+                <element signature="e#1143#1144#0" expanded="true" />
+                <element signature="e#1199#1200#0" expanded="true" />
+                <element signature="e#1247#1248#0" expanded="true" />
+                <element signature="e#1267#1268#0" expanded="true" />
+                <element signature="e#1301#1302#0" expanded="true" />
+                <element signature="e#1355#1356#0" expanded="true" />
+                <element signature="e#1401#1402#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,17 +98,32 @@
       <file leaf-file-name="Stage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Stage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="37" column="23" lean-forward="false" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+            <state relative-caret-position="442">
+              <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
               <folding>
-                <element signature="docComment;class#Stage#0" expanded="false" />
-                <element signature="method#getTimeToComplete#0;class#Stage#0" expanded="false" />
-                <element signature="docComment;method#setNextQueue#0;class#Stage#0" expanded="false" />
-                <element signature="method#setNextQueue#0;class#Stage#0" expanded="false" />
-                <element signature="method#setPreviousQueue#0;class#Stage#0" expanded="false" />
-                <element signature="docComment;method#getState#0;class#Stage#0" expanded="false" />
-                <element signature="method#getState#0;class#Stage#0" expanded="false" />
+                <element signature="docComment;class#Stage#0" />
+                <element signature="method#Stage#0;class#Stage#0" />
+                <element signature="method#Stage#1;class#Stage#0" />
+                <element signature="method#Stage#2;class#Stage#0" />
+                <element signature="method#compareTo#0;class#Stage#0" />
+                <element signature="method#getTimeToComplete#0;class#Stage#0" />
+                <element signature="docComment;method#setNextQueue#0;class#Stage#0" />
+                <element signature="method#setNextQueue#0;class#Stage#0" />
+                <element signature="method#setPreviousQueue#0;class#Stage#0" />
+                <element signature="method#hasPrevious#0;class#Stage#0" />
+                <element signature="method#hasNext#0;class#Stage#0" />
+                <element signature="docComment;method#getState#0;class#Stage#0" />
+                <element signature="method#getState#0;class#Stage#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SortedList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SortedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-119">
+              <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -111,10 +131,16 @@
       <file leaf-file-name="WaitingLine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WaitingLine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="408">
+              <caret line="60" column="32" lean-forward="true" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
               <folding>
-                <element signature="docComment;class#WaitingLine#0" expanded="false" />
+                <element signature="docComment;class#WaitingLine#0" />
+                <element signature="method#WaitingLine#0;class#WaitingLine#0" />
+                <element signature="method#WaitingLine#1;class#WaitingLine#0" />
+                <element signature="method#isEmpty#0;class#WaitingLine#0" />
+                <element signature="method#isFull#0;class#WaitingLine#0" />
+                <element signature="method#addItem#0;class#WaitingLine#0" />
+                <element signature="method#removeItem#0;class#WaitingLine#0" />
               </folding>
             </state>
           </provider>
@@ -145,11 +171,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -159,15 +180,15 @@
         <option value="$PROJECT_DIR$/src/TimeLord.java" />
         <option value="$PROJECT_DIR$/src/main.java" />
         <option value="$PROJECT_DIR$/src/WaitLine.java" />
-        <option value="$PROJECT_DIR$/src/Stats.java" />
-        <option value="$PROJECT_DIR$/src/Item.java" />
         <option value="$PROJECT_DIR$/src/Node.java" />
         <option value="$PROJECT_DIR$/src/LinkedList.java" />
-        <option value="$PROJECT_DIR$/src/Stock.java" />
         <option value="$PROJECT_DIR$/src/WaitingLine.java" />
+        <option value="$PROJECT_DIR$/src/Stats.java" />
+        <option value="$PROJECT_DIR$/src/Stock.java" />
+        <option value="$PROJECT_DIR$/src/Item.java" />
         <option value="$PROJECT_DIR$/src/Stage.java" />
-        <option value="$PROJECT_DIR$/src/PA3.java" />
         <option value="$PROJECT_DIR$/src/Factory.java" />
+        <option value="$PROJECT_DIR$/src/PA3.java" />
       </list>
     </option>
   </component>
@@ -176,6 +197,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -187,58 +211,36 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assignment Three" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assignment-Three" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assignment Three" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assignment-Three" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="Assignment Three" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment-Three" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assignment Three" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment-Three" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="settin&#9;ACTION&#9;WelcomeScreen.Settings&#10;settings&#9;ACTION&#9;WelcomeScreen.Settings" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="settin&#9;ACTION&#9;WelcomeScreen.Settings&#10;settings&#9;ACTION&#9;WelcomeScreen.Settings" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Custom" />
   </component>
   <component name="RunDashboard">
@@ -253,41 +255,57 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Assignment 3">
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-      <method />
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HEIGHT" value="0" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="WIDTH" value="0" />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
-      <module name="" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
-        <option name="GAPID_ENABLED" value="false" />
-        <option name="GAPID_DISABLE_PCS" value="false" />
-        <option name="SUPPORT_LIB_ENABLED" value="true" />
-        <option name="INSTRUMENTATION_ENABLED" value="true" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <method />
+    <configuration name="Assignment 3" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="PA3" />
+      <module name="Assignment-Three" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
@@ -316,29 +334,6 @@
       </Profilers>
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="BatchConfigurationType" factoryName="Batch">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -349,146 +344,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JarApplication" factoryName="JAR Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SCRATCH_FILE_ID" value="0" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Assignment-Three" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="false" name="Assignment 3" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="PA3" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Assignment-Three" />
-      <envs />
-      <method />
-    </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.Assignment 3" />
-    </list>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -505,11 +360,12 @@
       <workItem from="1527304435350" duration="4941000" />
       <workItem from="1527682033865" duration="9049000" />
       <workItem from="1527741207807" duration="20410000" />
+      <workItem from="1527916709703" duration="16199000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36150000" />
+    <option name="totallyTimeSpent" value="52349000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -521,73 +377,76 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32599118" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="-1919" y="31" width="958" height="1008" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.25625" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="-1919" y="31" width="958" height="1008" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="-959" y="31" width="958" height="1008" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1671875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="-959" y="31" width="958" height="1008" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.39957035" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="-1919" y="31" width="958" height="1008" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285968" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.32929516" />
+      <window_info anchor="bottom" x="-1919" y="31" width="958" height="1008" id="Messages" order="6" type="WINDOWED" weight="0.32599118" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32929516" />
+      <window_info anchor="right" x="-1919" y="31" width="958" height="1008" id="Run" order="10" type="WINDOWED" weight="0.25625" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3296875" />
+      <window_info anchor="bottom" x="-959" y="31" width="958" height="1008" id="Terminal" order="9" type="WINDOWED" weight="0.32929516" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" x="-959" y="31" width="958" height="1008" id="Project" order="0" visible="true" weight="0.1671875" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" x="-1920" y="23" width="1920" height="1017" id="Debug" order="2" type="WINDOWED" weight="0.39957035" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info id="Nl-Palette" order="2" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Properties" order="7" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39977974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3268206" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2564725" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16747573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285968" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="right" x="-1919" y="31" width="958" height="1008" id="Run" order="11" type="WINDOWED" visible="true" weight="0.25625" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Properties" order="8" />
+      <window_info anchor="bottom" x="-959" y="31" width="958" height="1008" id="Terminal" order="10" type="WINDOWED" weight="0.32929516" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info active="true" anchor="bottom" x="-1919" y="31" width="958" height="1008" id="Messages" order="7" type="WINDOWED" visible="true" weight="0.32599118" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32929516" />
+      <window_info id="Nl-Palette" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info content_ui="combo" x="-959" y="31" width="958" height="1008" id="Project" order="0" visible="true" weight="0.1671875" />
+      <window_info anchor="right" id="Database" order="9" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32929516" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.3296875" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3285968" />
+      <window_info anchor="bottom" x="-1920" y="23" width="1920" height="1017" id="Debug" order="3" type="WINDOWED" visible="true" weight="0.39957035" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -596,7 +455,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Factory.java</url>
+          <url />
           <line>125</line>
           <properties />
           <option name="timeStamp" value="7" />
@@ -605,14 +464,15 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="8" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
+        <watch expression="priorityStage" />
         <watch expression="focusStage" />
-        <watch expression="((Factory)this).stages.head_ptr_.next.data" custom="Factory" />
-        <watch expression="((Factory)this).stages.head_ptr_.next.next.data" custom="Factory" />
-        <watch expression="changeFlag" />
+        <watch expression="changeFlag" language="JAVA" />
+        <watch expression="this" />
+        <watch expression="stages" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -626,13 +486,19 @@
         <state relative-caret-position="920">
           <caret line="98" column="37" lean-forward="true" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="37" />
           <folding>
-            <element signature="docComment;class#Stage#0" expanded="false" />
-            <element signature="method#getTimeToComplete#0;class#Stage#0" expanded="false" />
-            <element signature="docComment;method#setNextQueue#0;class#Stage#0" expanded="false" />
-            <element signature="method#setNextQueue#0;class#Stage#0" expanded="false" />
-            <element signature="method#setPreviousQueue#0;class#Stage#0" expanded="false" />
-            <element signature="docComment;method#getState#0;class#Stage#0" expanded="false" />
-            <element signature="method#getState#0;class#Stage#0" expanded="false" />
+            <element signature="docComment;class#Stage#0" />
+            <element signature="method#Stage#0;class#Stage#0" />
+            <element signature="method#Stage#1;class#Stage#0" />
+            <element signature="method#Stage#2;class#Stage#0" />
+            <element signature="method#compareTo#0;class#Stage#0" />
+            <element signature="method#getTimeToComplete#0;class#Stage#0" />
+            <element signature="docComment;method#setNextQueue#0;class#Stage#0" />
+            <element signature="method#setNextQueue#0;class#Stage#0" />
+            <element signature="method#setPreviousQueue#0;class#Stage#0" />
+            <element signature="method#hasPrevious#0;class#Stage#0" />
+            <element signature="method#hasNext#0;class#Stage#0" />
+            <element signature="docComment;method#getState#0;class#Stage#0" />
+            <element signature="method#getState#0;class#Stage#0" />
           </folding>
         </state>
       </provider>
@@ -640,16 +506,14 @@
     <entry file="file://$PROJECT_DIR$/src/Factory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3174">
-          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+          <caret line="138" selection-start-line="138" selection-end-line="138" />
           <folding>
-            <element signature="docComment;method#Factory#0;class#Factory#0" expanded="false" />
-            <element signature="method#Factory#0;class#Factory#0" expanded="true" />
-            <element signature="method#initWaitingLines#0;class#Factory#0" expanded="true" />
-            <element signature="method#initStages#0;class#Factory#0" expanded="true" />
-            <element signature="e#3448#3474#0" expanded="false" />
-            <element signature="method#printStages#0;class#Factory#0" expanded="true" />
-            <element signature="method#updateFactory#0;class#Factory#0" expanded="true" />
-            <element signature="e#5174#5259#0" expanded="false" />
+            <element signature="docComment;method#Factory#0;class#Factory#0" />
+            <element signature="method#Factory#0;class#Factory#0" />
+            <element signature="method#run#0;class#Factory#0" />
+            <element signature="method#initWaitingLines#0;class#Factory#0" />
+            <element signature="method#initStages#0;class#Factory#0" />
+            <element signature="method#printStages#0;class#Factory#0" />
           </folding>
         </state>
       </provider>
@@ -657,8 +521,7 @@
     <entry file="file://$PROJECT_DIR$/src/PA3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -667,14 +530,12 @@
         <state relative-caret-position="1020">
           <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
           <folding>
-            <element signature="docComment;method#Factory#0;class#Factory#0" expanded="false" />
-            <element signature="method#Factory#0;class#Factory#0" expanded="true" />
-            <element signature="method#initWaitingLines#0;class#Factory#0" expanded="true" />
-            <element signature="method#initStages#0;class#Factory#0" expanded="true" />
-            <element signature="e#3448#3474#0" expanded="false" />
-            <element signature="method#printStages#0;class#Factory#0" expanded="true" />
-            <element signature="method#updateFactory#0;class#Factory#0" expanded="true" />
-            <element signature="e#5174#5259#0" expanded="false" />
+            <element signature="docComment;method#Factory#0;class#Factory#0" />
+            <element signature="method#Factory#0;class#Factory#0" />
+            <element signature="method#run#0;class#Factory#0" />
+            <element signature="method#initWaitingLines#0;class#Factory#0" />
+            <element signature="method#initStages#0;class#Factory#0" />
+            <element signature="method#printStages#0;class#Factory#0" />
           </folding>
         </state>
       </provider>
@@ -684,7 +545,13 @@
         <state relative-caret-position="391">
           <caret line="36" column="37" lean-forward="true" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
           <folding>
-            <element signature="docComment;class#WaitingLine#0" expanded="false" />
+            <element signature="docComment;class#WaitingLine#0" />
+            <element signature="method#WaitingLine#0;class#WaitingLine#0" />
+            <element signature="method#WaitingLine#1;class#WaitingLine#0" />
+            <element signature="method#isEmpty#0;class#WaitingLine#0" />
+            <element signature="method#isFull#0;class#WaitingLine#0" />
+            <element signature="method#addItem#0;class#WaitingLine#0" />
+            <element signature="method#removeItem#0;class#WaitingLine#0" />
           </folding>
         </state>
       </provider>
@@ -699,7 +566,7 @@
     <entry file="file://$PROJECT_DIR$/src/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
@@ -708,13 +575,19 @@
         <state relative-caret-position="1224">
           <caret line="107" column="25" lean-forward="true" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
           <folding>
-            <element signature="docComment;class#Stage#0" expanded="false" />
-            <element signature="method#getTimeToComplete#0;class#Stage#0" expanded="false" />
-            <element signature="docComment;method#setNextQueue#0;class#Stage#0" expanded="false" />
-            <element signature="method#setNextQueue#0;class#Stage#0" expanded="false" />
-            <element signature="method#setPreviousQueue#0;class#Stage#0" expanded="false" />
-            <element signature="docComment;method#getState#0;class#Stage#0" expanded="false" />
-            <element signature="method#getState#0;class#Stage#0" expanded="false" />
+            <element signature="docComment;class#Stage#0" />
+            <element signature="method#Stage#0;class#Stage#0" />
+            <element signature="method#Stage#1;class#Stage#0" />
+            <element signature="method#Stage#2;class#Stage#0" />
+            <element signature="method#compareTo#0;class#Stage#0" />
+            <element signature="method#getTimeToComplete#0;class#Stage#0" />
+            <element signature="docComment;method#setNextQueue#0;class#Stage#0" />
+            <element signature="method#setNextQueue#0;class#Stage#0" />
+            <element signature="method#setPreviousQueue#0;class#Stage#0" />
+            <element signature="method#hasPrevious#0;class#Stage#0" />
+            <element signature="method#hasNext#0;class#Stage#0" />
+            <element signature="docComment;method#getState#0;class#Stage#0" />
+            <element signature="method#getState#0;class#Stage#0" />
           </folding>
         </state>
       </provider>
@@ -722,23 +595,28 @@
     <entry file="file://$PROJECT_DIR$/src/PA3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Stage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
-            <element signature="docComment;class#Stage#0" expanded="false" />
-            <element signature="method#getTimeToComplete#0;class#Stage#0" expanded="false" />
-            <element signature="docComment;method#setNextQueue#0;class#Stage#0" expanded="false" />
-            <element signature="method#setNextQueue#0;class#Stage#0" expanded="false" />
-            <element signature="method#setPreviousQueue#0;class#Stage#0" expanded="false" />
-            <element signature="docComment;method#getState#0;class#Stage#0" expanded="false" />
-            <element signature="method#getState#0;class#Stage#0" expanded="false" />
+            <element signature="docComment;class#Stage#0" />
+            <element signature="method#Stage#0;class#Stage#0" />
+            <element signature="method#Stage#1;class#Stage#0" />
+            <element signature="method#Stage#2;class#Stage#0" />
+            <element signature="method#compareTo#0;class#Stage#0" />
+            <element signature="method#getTimeToComplete#0;class#Stage#0" />
+            <element signature="docComment;method#setNextQueue#0;class#Stage#0" />
+            <element signature="method#setNextQueue#0;class#Stage#0" />
+            <element signature="method#setPreviousQueue#0;class#Stage#0" />
+            <element signature="method#hasPrevious#0;class#Stage#0" />
+            <element signature="method#hasNext#0;class#Stage#0" />
+            <element signature="docComment;method#getState#0;class#Stage#0" />
+            <element signature="method#getState#0;class#Stage#0" />
           </folding>
         </state>
       </provider>
@@ -746,23 +624,20 @@
     <entry file="file://$PROJECT_DIR$/src/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Factory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state>
           <folding>
-            <element signature="docComment;method#Factory#0;class#Factory#0" expanded="false" />
-            <element signature="method#Factory#0;class#Factory#0" expanded="true" />
-            <element signature="method#initWaitingLines#0;class#Factory#0" expanded="true" />
-            <element signature="method#initStages#0;class#Factory#0" expanded="true" />
-            <element signature="e#3448#3474#0" expanded="false" />
-            <element signature="method#printStages#0;class#Factory#0" expanded="true" />
-            <element signature="method#updateFactory#0;class#Factory#0" expanded="true" />
-            <element signature="e#5174#5259#0" expanded="false" />
+            <element signature="docComment;method#Factory#0;class#Factory#0" />
+            <element signature="method#Factory#0;class#Factory#0" />
+            <element signature="method#run#0;class#Factory#0" />
+            <element signature="method#initWaitingLines#0;class#Factory#0" />
+            <element signature="method#initStages#0;class#Factory#0" />
+            <element signature="method#printStages#0;class#Factory#0" />
           </folding>
         </state>
       </provider>
@@ -770,24 +645,21 @@
     <entry file="file://$PROJECT_DIR$/src/PA3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-          <folding />
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Factory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
           <folding>
-            <element signature="docComment;method#Factory#0;class#Factory#0" expanded="false" />
-            <element signature="method#Factory#0;class#Factory#0" expanded="true" />
-            <element signature="method#initWaitingLines#0;class#Factory#0" expanded="true" />
-            <element signature="method#initStages#0;class#Factory#0" expanded="true" />
-            <element signature="e#3448#3474#0" expanded="false" />
-            <element signature="method#printStages#0;class#Factory#0" expanded="true" />
-            <element signature="method#updateFactory#0;class#Factory#0" expanded="true" />
-            <element signature="e#5174#5259#0" expanded="false" />
+            <element signature="docComment;method#Factory#0;class#Factory#0" />
+            <element signature="method#Factory#0;class#Factory#0" />
+            <element signature="method#run#0;class#Factory#0" />
+            <element signature="method#initWaitingLines#0;class#Factory#0" />
+            <element signature="method#initStages#0;class#Factory#0" />
+            <element signature="method#printStages#0;class#Factory#0" />
           </folding>
         </state>
       </provider>
@@ -810,22 +682,28 @@
     <entry file="file://$PROJECT_DIR$/src/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
-          <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Stage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1196">
-          <caret line="78" column="103" lean-forward="false" selection-start-line="78" selection-start-column="103" selection-end-line="78" selection-end-column="103" />
+          <caret line="78" column="103" selection-start-line="78" selection-start-column="103" selection-end-line="78" selection-end-column="103" />
           <folding>
-            <element signature="docComment;class#Stage#0" expanded="false" />
-            <element signature="method#getTimeToComplete#0;class#Stage#0" expanded="false" />
-            <element signature="docComment;method#setNextQueue#0;class#Stage#0" expanded="false" />
-            <element signature="method#setNextQueue#0;class#Stage#0" expanded="false" />
-            <element signature="method#setPreviousQueue#0;class#Stage#0" expanded="false" />
-            <element signature="docComment;method#getState#0;class#Stage#0" expanded="false" />
-            <element signature="method#getState#0;class#Stage#0" expanded="false" />
+            <element signature="docComment;class#Stage#0" />
+            <element signature="method#Stage#0;class#Stage#0" />
+            <element signature="method#Stage#1;class#Stage#0" />
+            <element signature="method#Stage#2;class#Stage#0" />
+            <element signature="method#compareTo#0;class#Stage#0" />
+            <element signature="method#getTimeToComplete#0;class#Stage#0" />
+            <element signature="docComment;method#setNextQueue#0;class#Stage#0" />
+            <element signature="method#setNextQueue#0;class#Stage#0" />
+            <element signature="method#setPreviousQueue#0;class#Stage#0" />
+            <element signature="method#hasPrevious#0;class#Stage#0" />
+            <element signature="method#hasNext#0;class#Stage#0" />
+            <element signature="docComment;method#getState#0;class#Stage#0" />
+            <element signature="method#getState#0;class#Stage#0" />
           </folding>
         </state>
       </provider>
@@ -834,22 +712,28 @@
     <entry file="file://$PROJECT_DIR$/src/Stats.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Stage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
-          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
           <folding>
-            <element signature="docComment;class#Stage#0" expanded="false" />
-            <element signature="method#getTimeToComplete#0;class#Stage#0" expanded="false" />
-            <element signature="docComment;method#setNextQueue#0;class#Stage#0" expanded="false" />
-            <element signature="method#setNextQueue#0;class#Stage#0" expanded="false" />
-            <element signature="method#setPreviousQueue#0;class#Stage#0" expanded="false" />
-            <element signature="docComment;method#getState#0;class#Stage#0" expanded="false" />
-            <element signature="method#getState#0;class#Stage#0" expanded="false" />
+            <element signature="docComment;class#Stage#0" />
+            <element signature="method#Stage#0;class#Stage#0" />
+            <element signature="method#Stage#1;class#Stage#0" />
+            <element signature="method#Stage#2;class#Stage#0" />
+            <element signature="method#compareTo#0;class#Stage#0" />
+            <element signature="method#getTimeToComplete#0;class#Stage#0" />
+            <element signature="docComment;method#setNextQueue#0;class#Stage#0" />
+            <element signature="method#setNextQueue#0;class#Stage#0" />
+            <element signature="method#setPreviousQueue#0;class#Stage#0" />
+            <element signature="method#hasPrevious#0;class#Stage#0" />
+            <element signature="method#hasNext#0;class#Stage#0" />
+            <element signature="docComment;method#getState#0;class#Stage#0" />
+            <element signature="method#getState#0;class#Stage#0" />
           </folding>
         </state>
       </provider>
@@ -858,14 +742,14 @@
     <entry file="file://$PROJECT_DIR$/src/TimeLord.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="6" column="42" lean-forward="false" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -874,31 +758,27 @@
     <entry file="file://$USER_HOME$/Google Drive/University/2018/sem 1/SENG2200/Assignments/Assignment-Two/c3175353PA2/PA2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2533">
-          <caret line="149" column="24" lean-forward="false" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="24" />
+          <caret line="149" column="24" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Google Drive/University/2018/sem 1/SENG2200/Assignments/Assignment-Two/c3175353PA2/PA2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
-          <caret line="149" column="24" lean-forward="false" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="24" />
+          <caret line="149" column="24" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TimeLord.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="6" column="42" lean-forward="false" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.java" />
     <entry file="file://$USER_HOME$/Google Drive/University/2018/sem 1/SENG2200/Assignments/Assignment-Two/src/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$USER_HOME$/Google Drive/University/2018/sem 1/SENG2200/Assignments/Assignment-Two/src/Point.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -910,7 +790,7 @@
     <entry file="file://$USER_HOME$/Google Drive/University/2018/sem 1/SENG2200/Assignments/Assignment-Two/src/PlanarShape.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
-          <caret line="34" column="48" lean-forward="false" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -924,117 +804,137 @@
     <entry file="file://$PROJECT_DIR$/src/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stats.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SortedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="50" column="22" lean-forward="false" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
-          <folding>
-            <element signature="docComment;class#SortedList#0" expanded="false" />
-            <element signature="method#SortedList#0;class#SortedList#0" expanded="false" />
-            <element signature="method#moveCurrent#0;class#SortedList#0" expanded="false" />
-            <element signature="method#sort#0;class#SortedList#0" expanded="false" />
-            <element signature="e#2017#2053#0" expanded="false" />
-            <element signature="e#2542#2623#0" expanded="false" />
-            <element signature="e#2949#3050#0" expanded="false" />
-            <element signature="method#getCurrentPosition#0;class#SortedList#0" expanded="false" />
-            <element signature="method#insertInOrder#0;class#SortedList#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="37" column="23" lean-forward="false" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-          <folding>
-            <element signature="docComment;class#Stage#0" expanded="false" />
-            <element signature="method#getTimeToComplete#0;class#Stage#0" expanded="false" />
-            <element signature="docComment;method#setNextQueue#0;class#Stage#0" expanded="false" />
-            <element signature="method#setNextQueue#0;class#Stage#0" expanded="false" />
-            <element signature="method#setPreviousQueue#0;class#Stage#0" expanded="false" />
-            <element signature="docComment;method#getState#0;class#Stage#0" expanded="false" />
-            <element signature="method#getState#0;class#Stage#0" expanded="false" />
-          </folding>
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1001">
-          <caret line="177" column="51" lean-forward="false" selection-start-line="177" selection-start-column="51" selection-end-line="177" selection-end-column="51" />
+        <state relative-caret-position="553">
+          <caret line="152" column="13" selection-start-line="152" selection-start-column="13" selection-end-line="152" selection-end-column="13" />
           <folding>
-            <element signature="e#2896#2951#0" expanded="false" />
-            <element signature="class#Listerator#0;class#LinkedList#0" expanded="false" />
+            <element signature="e#2896#2951#0" />
+            <element signature="class#Listerator#0;class#LinkedList#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SortedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WaitingLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="60" column="32" lean-forward="true" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+          <folding>
+            <element signature="docComment;class#WaitingLine#0" />
+            <element signature="method#WaitingLine#0;class#WaitingLine#0" />
+            <element signature="method#WaitingLine#1;class#WaitingLine#0" />
+            <element signature="method#isEmpty#0;class#WaitingLine#0" />
+            <element signature="method#isFull#0;class#WaitingLine#0" />
+            <element signature="method#addItem#0;class#WaitingLine#0" />
+            <element signature="method#removeItem#0;class#WaitingLine#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="799">
+          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
           <folding>
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="method#timeGenerator#0;class#Item#0" expanded="true" />
+            <element signature="e#1108#1109#0" expanded="true" />
+            <element signature="e#1143#1144#0" expanded="true" />
+            <element signature="e#1199#1200#0" expanded="true" />
+            <element signature="e#1247#1248#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+            <element signature="e#1301#1302#0" expanded="true" />
+            <element signature="e#1355#1356#0" expanded="true" />
+            <element signature="e#1401#1402#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Stock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="595">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
-            <element signature="docComment;class#Stock#0" expanded="false" />
+            <element signature="docComment;class#Stock#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WaitingLine.java">
+    <entry file="file://$PROJECT_DIR$/src/Stage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="442">
+          <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
           <folding>
-            <element signature="docComment;class#WaitingLine#0" expanded="false" />
+            <element signature="docComment;class#Stage#0" />
+            <element signature="method#Stage#0;class#Stage#0" />
+            <element signature="method#Stage#1;class#Stage#0" />
+            <element signature="method#Stage#2;class#Stage#0" />
+            <element signature="method#compareTo#0;class#Stage#0" />
+            <element signature="method#getTimeToComplete#0;class#Stage#0" />
+            <element signature="docComment;method#setNextQueue#0;class#Stage#0" />
+            <element signature="method#setNextQueue#0;class#Stage#0" />
+            <element signature="method#setPreviousQueue#0;class#Stage#0" />
+            <element signature="method#hasPrevious#0;class#Stage#0" />
+            <element signature="method#hasNext#0;class#Stage#0" />
+            <element signature="docComment;method#getState#0;class#Stage#0" />
+            <element signature="method#getState#0;class#Stage#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PA3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="391">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Factory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        <state relative-caret-position="314">
+          <caret line="176" lean-forward="true" selection-start-line="176" selection-end-line="176" />
           <folding>
-            <element signature="docComment;method#Factory#0;class#Factory#0" expanded="false" />
-            <element signature="method#Factory#0;class#Factory#0" expanded="true" />
-            <element signature="method#initWaitingLines#0;class#Factory#0" expanded="true" />
-            <element signature="method#initStages#0;class#Factory#0" expanded="true" />
-            <element signature="e#3448#3474#0" expanded="false" />
-            <element signature="method#printStages#0;class#Factory#0" expanded="true" />
-            <element signature="method#updateFactory#0;class#Factory#0" expanded="true" />
-            <element signature="e#5174#5259#0" expanded="false" />
+            <element signature="docComment;method#Factory#0;class#Factory#0" />
+            <element signature="method#Factory#0;class#Factory#0" />
+            <element signature="method#run#0;class#Factory#0" />
+            <element signature="method#initWaitingLines#0;class#Factory#0" />
+            <element signature="method#initStages#0;class#Factory#0" />
+            <element signature="method#printStages#0;class#Factory#0" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

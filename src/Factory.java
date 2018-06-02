@@ -22,10 +22,7 @@ public class Factory {
     private double N;
     //stats for the factory
     private Stats stats = new Stats();
-    //the queue length
-    private int queueLength;
-    //the number of queues.
-    private int numQueues;
+
 
     //An arrayList of queues. The waiting lines feed the stages that they precede.
     private ArrayList<WaitingLine<Item>> waitingLines;
@@ -37,44 +34,39 @@ public class Factory {
 
 
     /**Constructor initializes the necessary components of the factory.*/
-    Factory(double runTime, double mean, double range, int ql, int numStages, int nQ) {
+    Factory(double runTime, double mean, double range, int qLength) {
 
         productionTime = runTime;
         M  = mean;
         N = range;
         theTime = 0;
-        queueLength = ql;
-        numQueues = nQ;
         stock = new Stock(mean, range);
-        initWaitingLines(queueLength, nQ);     //Initialized before stages as stages point to the queues.
-        initStages(numStages);                          //populate stages collection with stages.
+        initWaitingLines(qLength);
+        initStages();
     }
 
     //This runs the factory.
     public void run() {
 
+
         while(theTime < productionTime){
             updateFactory();     //sets all the shit. This is your big boi.
-            printStages();
+            //printStages();
         }
 
-
-
-    }
-    //returns the statistics object for this factory.
-    public Stats getStatistics(){
-        return stats;
+        //factory has completed manufacture so print statistics
+        stats.printStats();
     }
     //Populates the queue list with queues. Queues must be initialized before stages.
-    private void initWaitingLines(int queueLength, int numQueues){
+    private void initWaitingLines(int queueLength){
 
         //List's capacity is numQueues.
-        waitingLines = new ArrayList<>(numQueues);
+        waitingLines = new ArrayList<>(5);
         //Declare a new WaitingLine to go into the list of lines.
         WaitingLine<Item> newLine;
 
         //populate the list of lines with new lines.
-        for(int i = 0; i<numQueues;i++){
+        for(int i = 0; i<5;i++){
             //Create a new waitingLine.
              newLine = new WaitingLine<>(queueLength);
             //and place it into the list of lines.
@@ -82,30 +74,67 @@ public class Factory {
         }
     }
     //Populates the a priority queue of stages with new  stages and pointers to respective queues.
-    private void initStages(int numberOfStages) {
+    private void initStages() {
         //Create a sorted list for the stages to live in.
         stages = new SortedList<>();
         //Declare a new stage.
         Stage newStage;
         //populate the sortedList with stages.
-        for(int i = 0; i<numberOfStages;i++){
+        for(int i = 0; i<8;i++){
             //instantiate the new stage
-            newStage  = new Stage();
+            newStage  = new Stage(M,N);
             //and place it into the priority queue.
             stages.add(newStage);
         }
         //Create an iterator to assign stages.
         Iterator<Stage> stageIterator = stages.iterator();
-        //Set Stage 1 next queue.
-        Stage stage1 = stageIterator.next();
-        //Set Stage 2 previous queue.
-        Stage stage2 = stageIterator.next();
+        /**Assign stages*/
+        Stage stage0 = stageIterator.next();
+        Stage stage1 = stageIterator.next();//Set Stage 1 next queue.
+        Stage stage2a = stageIterator.next();//Set Stage 1 next queue.
+        Stage stage2b = stageIterator.next();//Set Stage 1 next queue.
+        Stage stage3 = stageIterator.next();//Set Stage 1 next queue.
+        Stage stage4a = stageIterator.next();//Set Stage 1 next queue.
+        Stage stage4b = stageIterator.next();//Set Stage 1 next queue.
+        Stage stage5 = stageIterator.next();//Set Stage 1 next queue.
 
-        //Assign Queues to stages.
+        /**Assign Queues to stages.*/
         //stage1 has no previous but does have a next.
-        stage1.setNextQueue(waitingLines.get(0));
-        //stage2 has no next but does have a previous.
-        stage2.setPreviousQueue(waitingLines.get(0));
+        stage0.setNextQueue(waitingLines.get(0));
+        //stage2 has prev and next.
+        stage1.setPreviousQueue(waitingLines.get(0));
+        stage1.setNextQueue(waitingLines.get(1));
+        //stage2a has both and shares with stage2b.
+        stage2a.setPreviousQueue(waitingLines.get(1));
+        stage2a.setNextQueue(waitingLines.get(2));
+        //stage2b has both and shares with stage 2a.
+        stage2b.setPreviousQueue(waitingLines.get(1));
+        stage2b.setNextQueue(waitingLines.get(2));
+        //stage3 has both
+        stage3.setPreviousQueue(waitingLines.get(2));
+        stage3.setNextQueue(waitingLines.get(3));
+        //stage4a has both and shares with stage4b.
+        stage4a.setPreviousQueue(waitingLines.get(3));
+        stage4a.setNextQueue(waitingLines.get(4));
+        //stage4b has both and shares with stage4a.
+        stage4b.setPreviousQueue(waitingLines.get(3));
+        stage4b.setNextQueue(waitingLines.get(4));
+        //stage5 has no next but it does have a previous.
+        stage5.setPreviousQueue(waitingLines.get(4));
+
+        /**Set the modes of stages*/
+        stage0.setMode(1);
+        stage1.setMode(1);
+        stage2a.setMode(2);
+        stage2b.setMode(3);
+        stage3.setMode(1);
+        stage4a.setMode(3);
+        stage4b.setMode(2);
+        stage5.setMode(1);
+
+
+
+
     }
     //prints out the completion times for the priority queue of stages.
     public void printStages(){
@@ -116,30 +145,32 @@ public class Factory {
             System.out.println(stagesIterator.next().getTimeToComplete());
         }
     }
-
-    //NEEDS WORK: Populate stages with dummy items. This is going to become way more complex and occur at the
-    // beginning of each snapshot.
+    //updates the stages, queues and statistics of the factory.
     public void updateFactory() {
-        //sort the stages. Now the head is the highest priority.
+
+        //By sorting the stages the stage that will next process an item becomes the list's head.
         stages.sort();
-        //Set up placeholder for priority stage.
+        //Take the head (highest priority stage).
         Stage priorityStage = stages.getHead();
-        //This implies that it is the first run through. As such you don't want to update the time to -1. Bad.
-        if(theTime!=0) {
+        //If this value is true it means that this is the first run through and the time should not be updated yet.
+        if(priorityStage.getTimeToComplete()!=-1) {
             //Advance the global time to the head of the global time.
             theTime = priorityStage.getTimeToComplete();
             //reset the heads time so that it cannot have priority.
+            priorityStage.updateTimeToComplete(-1);
+            //Set priority stages state to blocked as it is finished processing and it's item is to be moved on.
+            priorityStage.setState(0);
+            //Update the time in the statistics.
+            stats.updateTime(theTime);
         }
-        //Change the time of the highest priority stage to -1 so that if it get's blocked it doesn't keep being the
-        // highest priority.
-        priorityStage.updateTimeToComplete(-1);
 
         //This flag indicates whether or not changes are still being made to the stages.
         boolean changeFlag;
 
-        //Do while loop will continually update the stages until no more changes can be made.
-        // At this point the function will end.
-        //There is no case for processing as things that are processing must wait for next time incrementation.
+        /**Do while loop will continually update the stages until no more changes can be made.
+         * At this point the function will end.
+         * There is no case for processing as things that are processing must wait for next time incrementation.
+         * */
         do {
             //Reset the changeFlag to false at the start of each loop. If I change it made it will go to true.
             changeFlag = false;
@@ -173,9 +204,11 @@ public class Factory {
                 //else if it's starving and it's the first stage take from stock.
                 else if (focusStage.getState() == -1) {
                     //stock will automatically replenish.
-                    focusStage.processItem(stock.takeItem(0), productionTime);
+                    focusStage.processItem(stock.takeItem(0), theTime);
                     //stage got fed so change occurred.
                     changeFlag = true;
+                    //increment the items that have been created.
+                    stats.incItmCreate();
                 }
             }//END STARVATION WHILE.
 
@@ -195,7 +228,7 @@ public class Factory {
                     //Check if next queue has room in it.
                     if (!nextQ.isFull()) {
                         //append the processed item into the end of the next queue.
-                        nextQ.addItem(focusStage.ejectItem());
+                        nextQ.addItem(focusStage.ejectItem(theTime));
                         //ejection so change was made.
                         changeFlag = true;
                     }
@@ -203,16 +236,29 @@ public class Factory {
                 }
                 //If it's the last stage and it's blocked just eject.
                 else if (focusStage.getState() == 0) {
-                    focusStage.ejectItem();
+                    focusStage.ejectItem(theTime);
                     //a change was made.
                     changeFlag = true;
+                    //increment the items that have been completely processed.
+                    stats.incItmProcessed();
                 }
             }//END BLOCKAGE WHILE.
+
+
+
 
         } while (changeFlag); //END DO-WHILE
 
     }
 
+
+
+
+
+    //returns the statistics object for this factory.
+    public Stats getStatistics(){
+        return stats;
+    }
 }
 
 
