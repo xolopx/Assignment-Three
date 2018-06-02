@@ -10,14 +10,14 @@ import java.util.Random;
 
 public class Item {
 
-    private double productionTime;
+    private double randValue;
     private double timeEntering;
     private double timeLeaving;
     private String path;
 
     //Constructor simply takes the mean and range and the item will generate its own time.
     Item(){
-        productionTime = timeGenerator();
+        randValue = timeGenerator();
         timeEntering = -1;
         timeLeaving = -1;
     }
@@ -31,25 +31,21 @@ public class Item {
     }
     //TESTING: Prints out the time that the item needs to be produced.
     public String timeToString(){
-        return String.format("%4.2f",productionTime);
+        return String.format("%4.2f",randValue);
     }
-    //Returns the production time of the item.
-    public double getTime(){
-        return productionTime;
+
+    public double getRand(){
+        return randValue;
     }
-    //gets the time entering.
     public double getTimeEntering() {
         return timeEntering;
     }
-    //gets time leaving.
     public void setTimeEntering(double timeEntering) {
         this.timeEntering = timeEntering;
     }
-    //gets time leaving.
     public double getTimeLeaving() {
         return timeLeaving;
     }
-    //sets time leaving.
     public void setTimeLeaving(double timeLeaving) {
         this.timeLeaving = timeLeaving;
     }

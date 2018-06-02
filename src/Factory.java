@@ -37,10 +37,15 @@ public class Factory {
 
     /*PUBLIC*/
 
-    public void run() {
-
+    public void run()  {
+        int round = 0;
         while(theTime < productionTime){
             updateFactory();
+            System.out.println("Round: " + round + "\t Time: " + theTime);
+            printStages();
+            System.out.println("\n");
+
+            round++;
         }
         stats.printStats();
     }
@@ -57,7 +62,7 @@ public class Factory {
             priorityStage.setTime(-1);                  //PriorityStage must be reset to zero to cease its priority.
         }
 
-        processChanges();                               //updates thew system.
+        processChanges();                               //updates item allocation in system.
 
     }
 
@@ -88,12 +93,6 @@ public class Factory {
         }
 
         assignQueues();
-
-
-
-
-
-
     }
     private void updateStageStats(Stage priorityStage){
 
@@ -101,7 +100,7 @@ public class Factory {
             focusStage.updateStatistics(priorityStage.getTime() - theTime);
         }
 
-        theTime = priorityStage.getTime();
+
     }
     private void assignQueues(){
         Iterator<Stage> stageIterator = stages.iterator();
@@ -147,6 +146,18 @@ public class Factory {
         stage4a.setMode(3);
         stage4b.setMode(2);
         stage5.setMode(1);
+
+        stage0.setName("S0");
+        stage1.setName("S1");
+        stage2a.setName("S2a");
+        stage2b.setName("S2b");
+        stage3.setName("S3");
+        stage4a.setName("S4a");
+        stage4b.setName("S4b");
+        stage5.setName("S5");
+
+
+
     }
     private void processChanges() {
 
@@ -167,18 +178,23 @@ public class Factory {
                             //if there is no previous it is stage0. Take from stock.
                             focusStage.processItem(stock.takeItem(0), theTime);
                             changeFlag = true;
+                            stats.updateNumCreated();
                         }
                         break;
 
                     case 0://Attend to blocked stages.
                         if (focusStage.hasNext()) {
                             if (!focusStage.isNextFull()) {
-                                focusStage.getNextQ().addItem(focusStage.ejectItem(theTime));
+                                Item ejectedItem  = focusStage.ejectItem(theTime);
+                                focusStage.getNextQ().addItem(ejectedItem);
+
                                 changeFlag = true;
                             }
                         } else {
                             //if there is no next queue this is stage5 so just eject.
+
                             focusStage.ejectItem(theTime);
+                            stats.updateNumProcessed();
                             changeFlag = true;
                         }
                         break;
@@ -188,9 +204,31 @@ public class Factory {
         } while (changeFlag);
     }
     public void updateTime(Stage priorityStage){
+
         theTime = priorityStage.getTime();
+        stats.updateTime(theTime);
     }
+    public void printStages(){
+
+        for(Stage focusStage: stages){
+            if(focusStage.getItem()!=null) {
+                double timeToComplete = focusStage.getTime();
+                String name = focusStage.getName();
+                double itemStart = focusStage.getItem().getTimeEntering();
+                double itemEnd = focusStage.getItem().getTimeLeaving();
+
+                System.out.println(
+                        name + ": \tTime to Complete: " + timeToComplete + "\tItem Start: " + itemStart + "\t"
+                        + "Item End: " + itemEnd
+                );
+            }
+
+        }
+
+    }
+
 }
+
 
 
 

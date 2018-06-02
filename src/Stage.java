@@ -140,15 +140,15 @@ public class Stage implements Comparable<Stage> {
         switch(mode)
         {
             case 1:  //stages 0, 1, 3 & 5.
-                return theTime + (mean + range*(item.getTime()-0.5));
+                return theTime + (mean + range*(item.getRand()-0.5));
 
 
             case 2: //Stages 2a & 4b.
-                return theTime + (2*mean + 2*range*(item.getTime()-0.5));
+                return theTime + (2*mean + 2*range*(item.getRand()-0.5));
 
 
             case 3: //Stages 2b & 4a.
-                return theTime + (mean + 0.5*range*(item.getTime()-0.5));
+                return theTime + (mean + 0.5*range*(item.getRand()-0.5));
 
         }
 
@@ -165,6 +165,9 @@ public class Stage implements Comparable<Stage> {
     }
     public Item takeNext(int index){
         return nextQueue.takeItem(index);
+    }
+    public Item getItem(){
+        return item;
     }
 
 
