@@ -11,15 +11,15 @@ import java.util.Random;
 public class Item {
 
     private double randValue;
-    private double timeEntering;
-    private double timeLeaving;
-    private String path;
+    private double timeEnteringQ;
+    private double timeLeavingQ;
+    private String path = "";            //path through stages taken by item.
 
     //Constructor simply takes the mean and range and the item will generate its own time.
     Item(){
         randValue = timeGenerator();
-        timeEntering = -1;
-        timeLeaving = -1;
+        timeEnteringQ = -1;
+        timeLeavingQ = -1;
     }
 
 
@@ -38,15 +38,21 @@ public class Item {
         return randValue;
     }
     public double getTimeEntering() {
-        return timeEntering;
+        return timeEnteringQ;
     }
     public void setTimeEntering(double timeEntering) {
-        this.timeEntering = timeEntering;
+        this.timeEnteringQ = timeEntering;
     }
     public double getTimeLeaving() {
-        return timeLeaving;
+        return timeLeavingQ;
     }
     public void setTimeLeaving(double timeLeaving) {
-        this.timeLeaving = timeLeaving;
+        this.timeLeavingQ = timeLeaving;
+    }
+    public void updatePath(String stageName){
+        path += stageName;
+    }
+    public String getPath() {
+        return path;
     }
 }

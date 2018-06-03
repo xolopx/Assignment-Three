@@ -17,8 +17,8 @@ public class Stage implements Comparable<Stage> {
     private int state;                              //Starving -1, blocked 0, processing 1.
     private double mean;                            //used for processing time calculation.
     private double range;                           //used for processing time calculation.
-    private WaitingLine<Item> nextQueue;            //Points to next queue. For stage5 is null.
-    private WaitingLine<Item> previousQueue;        //Points to previous queue. For stage0 is null.
+    private WaitingLine nextQueue;            //Points to next queue. For stage5 is null.
+    private WaitingLine previousQueue;        //Points to previous queue. For stage0 is null.
     private double time;                            //Time stage will complete processing.
     private int mode;                               //Processing time mode. S[0,1,3,5] 1, S[S2a,S4b] 2, S[2b,4a] 3.
     private double timeStarving;
@@ -42,6 +42,7 @@ public class Stage implements Comparable<Stage> {
             item = itemToProcess;
             time = calculateCompletionTime(theTime);
             item.setTimeEntering(theTime);
+            item.updatePath(this.getName());
             state = 1;
         }
         else {
@@ -92,12 +93,12 @@ public class Stage implements Comparable<Stage> {
     public void setTime (double newTime){
         time = newTime;
     }
-    public void setNextQ(WaitingLine<Item> nextList){nextQueue = nextList;}
-    public void setPreviousQ(WaitingLine<Item> prevList) {previousQueue = prevList;}
-    public WaitingLine<Item> getPreviousQ(){
+    public void setNextQ(WaitingLine nextList){nextQueue = nextList;}
+    public void setPreviousQ(WaitingLine prevList) {previousQueue = prevList;}
+    public WaitingLine getPreviousQ(){
         return previousQueue;
     }
-    public WaitingLine<Item> getNextQ(){
+    public WaitingLine getNextQ(){
         return nextQueue;
     }
 
@@ -173,8 +174,8 @@ public class Stage implements Comparable<Stage> {
     public boolean isNextFull(){
         return nextQueue.isFull();
     }
-    public Item takePrev(int index){
-        return previousQueue.takeItem(index);
+    public Item takePrev(int index,double theTime){
+        return previousQueue.takeItem(index, theTime);
     }
     public Item getItem(){
         return item;

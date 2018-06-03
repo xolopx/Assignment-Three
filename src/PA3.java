@@ -12,7 +12,7 @@ public class PA3 {
         double M = 1000;        //mean, for time calculation.
         double N = 1000;        //range, for time calculation.
         double productionTime = 10000000;
-        int queueLength = 7;
+        int queueLength = 5;
 
 
         Factory one = new Factory(productionTime, M, N, queueLength);

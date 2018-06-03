@@ -17,7 +17,7 @@ public class Factory {
     private double M;                                   //The mean used to calculate processing time for stages.
     private double N;                                   //The range used to calculate processing time for stages.
     private Stats stats = new Stats();                  //Statistics objects that holds information about the factory.
-    private ArrayList<WaitingLine<Item>> waitingLines;  //All of the queues for the factory.
+    private ArrayList<WaitingLine>  waitingLines;       //All of the queues for the factory.
     private Stock stock;                                //The infinite supply of items for the factory.
     private SortedList<Stage> stages;                   //The stages of the factory.
 
@@ -41,17 +41,20 @@ public class Factory {
         int round = 0;
         while(theTime < productionTime){
             updateFactory();
-           // System.out.println("Round: " + round + "\t Time: " + theTime);
-           // printStages();
-           //System.out.println("\n");
+            //System.out.println("\nRound: " + round + "\t Time: " + theTime);
+            //updateStatistics();
+            //stats.printStats();
 
-            round++;
+
+             round++;
         }
+
         updateStatistics();
         stats.printStats();
     }
     public void updateFactory() {
 
+        processChanges();                               //updates item allocation in system.
 
         stages.sort();
         Stage priorityStage = stages.getHead();         //Highest priority stage.
@@ -63,7 +66,7 @@ public class Factory {
             priorityStage.setTime(-1);                  //PriorityStage must be reset to zero to cease its priority.
         }
 
-        processChanges();                               //updates item allocation in system.
+
 
     }
 
@@ -74,12 +77,12 @@ public class Factory {
         //List's capacity is numQueues.
         waitingLines = new ArrayList<>(5);
         //Declare a new WaitingLine to go into the list of lines.
-        WaitingLine<Item> newLine;
+        WaitingLine newLine;
 
         //populate the list of lines with new lines.
         for(int i = 0; i<5;i++){
             //Create a new waitingLine.
-             newLine = new WaitingLine<>(queueLength);
+             newLine = new WaitingLine(queueLength);
             //and place it into the list of lines.
             waitingLines.add(newLine);
         }
@@ -172,7 +175,7 @@ public class Factory {
                     case -1://Attend to starving stages.
                         if (focusStage.hasPrevious()) {
                             if (!focusStage.isPrevEmpty()) {
-                                focusStage.processItem(focusStage.takePrev(0), theTime);
+                                focusStage.processItem(focusStage.takePrev(0,theTime), theTime);
                                 changeFlag = true;
                             }
                         } else {
@@ -187,14 +190,15 @@ public class Factory {
                         if (focusStage.hasNext()) {
                             if (!focusStage.isNextFull()) {
                                 Item ejectedItem  = focusStage.ejectItem(theTime);
-                                focusStage.getNextQ().addItem(ejectedItem);
+                                focusStage.getNextQ().addItem(ejectedItem, theTime);
 
                                 changeFlag = true;
                             }
                         } else {
                             //if there is no next queue this is stage5 so just eject.
 
-                            focusStage.ejectItem(theTime);
+
+                            stats.updatePaths(focusStage.ejectItem(theTime));
                             stats.updateNumProcessed();
                             changeFlag = true;
                         }
@@ -213,14 +217,17 @@ public class Factory {
 
         for(Stage focusStage: stages){
             if(focusStage.getItem()!=null) {
-                double timeToComplete = focusStage.getTime();
+
+                String timeToComplete = String.format("%4.2f",focusStage.getTime());
+                String timeStarving = String.format("%4.2f",focusStage.getTimeStarving());
+                String timeBlocked = String.format("%4.2f",focusStage.getTimeBlocked());
+                String timeProcessing = String.format("%4.2f",focusStage.getTimeProducing());
                 String name = focusStage.getName();
-                double itemStart = focusStage.getItem().getTimeEntering();
-                double itemEnd = focusStage.getItem().getTimeLeaving();
+
 
                 System.out.println(
-                        name + ": \tTime to Complete: " + timeToComplete + "\tItem Start: " + itemStart + "\t"
-                        + "Item End: " + itemEnd
+                        name + "\t\tCompletion Time: " + timeToComplete + "\t\t\ttTime Processing: " + timeProcessing
+                        + "\t\t\tTime Starving: " +  timeStarving + "\t\t\tTime Blocked: " + timeBlocked
                 );
             }
 
@@ -230,6 +237,9 @@ public class Factory {
     private void updateStatistics(){
         for(Stage focusStage: stages){
             stats.updateStageStateTimes(focusStage,theTime);
+        }
+        for(int i = 0; i<5;i++){
+            stats.updateQueues(waitingLines.get(i), i);
         }
     }
 
