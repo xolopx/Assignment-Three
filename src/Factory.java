@@ -47,6 +47,7 @@ public class Factory {
 
             round++;
         }
+        updateStatistics();
         stats.printStats();
     }
     public void updateFactory() {
@@ -225,6 +226,11 @@ public class Factory {
 
         }
 
+    }
+    private void updateStatistics(){
+        for(Stage focusStage: stages){
+            stats.updateStageStateTimes(focusStage,theTime);
+        }
     }
 
 }

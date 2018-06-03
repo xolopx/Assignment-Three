@@ -176,19 +176,18 @@ public class Stage implements Comparable<Stage> {
     public Item takePrev(int index){
         return previousQueue.takeItem(index);
     }
-    public Item takeNext(int index){
-        return nextQueue.takeItem(index);
-    }
     public Item getItem(){
         return item;
     }
 
 
-
-
-
-
-
-
-
+    public double getTimeStarving() {
+        return timeStarving;
+    }
+    public double getTimeProducing() {
+        return timeProducing;
+    }
+    public double getTimeBlocked() {
+        return timeBlocked;
+    }
 }
