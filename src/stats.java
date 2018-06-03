@@ -68,12 +68,12 @@ public class Stats {
         System.out.println(
                 "S2a  \t\t" + String.format("%4.2f",stageStateTimes[2][0]) +
                         "\t\t\t\t" + String.format("%4.2f",stageStateTimes[2][1]) +
-                        "\t\t\t" + String.format("%4.2f",stageStateTimes[2][2])
+                        "\t\t" + String.format("%4.2f",stageStateTimes[2][2])
         );
         System.out.println(
                 "S2b  \t\t" + String.format("%4.2f",stageStateTimes[3][0]) +
                         "\t\t\t\t" + String.format("%4.2f",stageStateTimes[3][1]) +
-                        "\t\t\t" + String.format("%4.2f",stageStateTimes[3][2])
+                        "\t\t" + String.format("%4.2f",stageStateTimes[3][2])
         );
         System.out.println(
                 "S3   \t\t" + String.format("%4.2f",stageStateTimes[4][0]) +
@@ -83,12 +83,12 @@ public class Stats {
         System.out.println(
                 "S4a  \t\t" + String.format("%4.2f",stageStateTimes[5][0]) +
                         "\t\t\t\t" + String.format("%4.2f",stageStateTimes[5][1]) +
-                        "\t\t\t" + String.format("%4.2f",stageStateTimes[5][2])
+                        "\t\t" + String.format("%4.2f",stageStateTimes[5][2])
         );
         System.out.println(
                 "S4b  \t\t" + String.format("%4.2f",stageStateTimes[6][0]) +
                         "\t\t\t\t" + String.format("%4.2f",stageStateTimes[6][1]) +
-                        "\t\t\t" + String.format("%4.2f",stageStateTimes[6][2])
+                        "\t\t" + String.format("%4.2f",stageStateTimes[6][2])
         );
         System.out.println(
                 "S5   \t\t" + String.format("%4.2f",stageStateTimes[7][0]) +
