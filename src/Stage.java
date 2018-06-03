@@ -235,4 +235,8 @@ public class Stage implements Comparable<Stage> {
         return stageName;
     }
     public WaitingLine getNextQ(){ return nextQueue; }
+
+    public void setTime(double i) {
+        time = i;
+    }
 }

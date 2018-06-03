@@ -14,7 +14,7 @@ public class Stock{
      * Initially the stock is filled with a new item. And the random object created.
      */
     Stock(){
-        r = new Random();
+        r = new Random(5);
         stock = new Item(r.nextDouble());
     }
 

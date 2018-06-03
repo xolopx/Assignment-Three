@@ -196,7 +196,8 @@ public class Factory {
             updateStageStats(priorityStage);
             updateTime(priorityStage);
             priorityStage.setState(0);                  //The priorityStage state must be blocked in order to eject.
-            //priorityStage.setTime(-1);                  //PriorityStage must be reset to zero to cease its priority.
+            priorityStage.setTime(-1);                  //PriorityStage must be reset to zero to cease its priority.
+
         }
         updateStatistics();
     }
@@ -230,24 +231,43 @@ public class Factory {
 
                     case 0://Attend to blocked stages.
                         if (focusStage.hasNext()) {
-                            if (!focusStage.isNextFull()) {
+                            if (!(focusStage.isNextFull())) {
 
-                                focusStage.getNextQ().addItem( focusStage.ejectItem(currentTime), currentTime);
+                                focusStage.getNextQ().addItem(focusStage.ejectItem(currentTime), currentTime);
                                 //System.out.println("Size of queue is: " + focusStage.getNextQ().getSize());
                                 changeFlag = true;
                             }
-
-                            else {
-                                //System.out.println("it is still blocked because next was full");
-                            }
-                        } else {
+                        }
+                        else {
                             //if there is no next queue this is stage5 so just eject.
 
                             stats.updatePaths(focusStage.ejectItem(currentTime));
                             stats.updateNumProcessed();
                             changeFlag = true;
                         }
+
                         break;
+
+                        /*Essentially redundant*/
+//                    case 1: //If processing
+//                        //if this is the case try to offload your shit bruh.
+//                        if(focusStage.getTime()<= currentTime) {
+//                            if (focusStage.hasNext()) {
+//
+//                                if (focusStage.isNextFull()) {
+//                                    focusStage.setState(0);//blocked now.
+//                                } else {
+//                                    focusStage.getNextQ().addItem(focusStage.ejectItem(currentTime), currentTime);
+//                                    changeFlag = true;
+//                                }
+//                            } else {//yo is stage 5.
+//
+//                                stats.updatePaths(focusStage.ejectItem(currentTime));
+//                                stats.updateNumProcessed();
+//                                changeFlag = true;
+//                            }
+//                        }
+//                        break;
                 }
 
             }
@@ -286,8 +306,6 @@ public class Factory {
         for(Stage focusStage : stages) {
             focusStage.updateStatistics(priorityStage.getTime() - currentTime);
         }
-
-
     }
 
     /**
