@@ -20,6 +20,7 @@ public class Factory {
     private ArrayList<WaitingLine>  waitingLines;       //All of the queues for the factory.
     private Stock stock;                                //The infinite supply of items for the factory.
     private SortedList<Stage> stages;                   //The stages of the factory.
+    private Stage[] arrayStage= new Stage[8];
 
 
 
@@ -39,14 +40,15 @@ public class Factory {
 
     public void run()  {
         int round = 0;
+        Iterator<Stage> stageIterator = stages.iterator();
+        for(int i = 0;i<8;i++){
+            arrayStage[i] = stageIterator.next();
+        }
         while(theTime < productionTime){
+           // System.out.println("\n\nRound "+round+"\n");
             updateFactory();
-            //System.out.println("\nRound: " + round + "\t Time: " + theTime);
-            //updateStatistics();
-            //stats.printStats();
+            round++;
 
-
-             round++;
         }
 
         updateStatistics();
@@ -59,15 +61,17 @@ public class Factory {
         stages.sort();
         Stage priorityStage = stages.getHead();         //Highest priority stage.
 
+
+        /*PRINTING*/
+        //printStages();
+
         if(priorityStage.getTime()!=-1) {               //-1 means this is the first run. No items have been processed.
+
             updateStageStats(priorityStage);
             updateTime(priorityStage);
             priorityStage.setState(0);                  //The priorityStage state must be blocked in order to eject.
             priorityStage.setTime(-1);                  //PriorityStage must be reset to zero to cease its priority.
         }
-
-
-
     }
 
     /*PRIVATE*/
@@ -144,12 +148,12 @@ public class Factory {
         /**Set the modes of stages*/
         stage0.setMode(1);
         stage1.setMode(1);
-        stage2a.setMode(2);
-        stage2b.setMode(3);
         stage3.setMode(1);
-        stage4a.setMode(3);
-        stage4b.setMode(2);
         stage5.setMode(1);
+        stage2a.setMode(2);
+        stage4b.setMode(2);
+        stage2b.setMode(3);
+        stage4a.setMode(3);
 
         stage0.setName("S0");
         stage1.setName("S1");
@@ -163,7 +167,7 @@ public class Factory {
 
 
     }
-    private void processChanges() {
+    private void processChanges()  {
 
         boolean changeFlag;                             //Changes made = true. No more changes = false;
         do {
@@ -189,14 +193,17 @@ public class Factory {
                     case 0://Attend to blocked stages.
                         if (focusStage.hasNext()) {
                             if (!focusStage.isNextFull()) {
-                                Item ejectedItem  = focusStage.ejectItem(theTime);
-                                focusStage.getNextQ().addItem(ejectedItem, theTime);
 
+                                focusStage.getNextQ().addItem( focusStage.ejectItem(theTime), theTime);
+                                //System.out.println("Size of queue is: " + focusStage.getNextQ().getSize());
                                 changeFlag = true;
+                            }
+
+                            else {
+                                //System.out.println("it is still blocked because next was full");
                             }
                         } else {
                             //if there is no next queue this is stage5 so just eject.
-
 
                             stats.updatePaths(focusStage.ejectItem(theTime));
                             stats.updateNumProcessed();
@@ -214,8 +221,10 @@ public class Factory {
         stats.updateTime(theTime);
     }
     public void printStages(){
-
+        System.out.println("\nThe time: " + String.format("%4.2f",theTime)+"\n");
         for(Stage focusStage: stages){
+
+
             if(focusStage.getItem()!=null) {
 
                 String timeToComplete = String.format("%4.2f",focusStage.getTime());
@@ -226,13 +235,20 @@ public class Factory {
 
 
                 System.out.println(
-                        name + "\t\tCompletion Time: " + timeToComplete + "\t\t\ttTime Processing: " + timeProcessing
+                        name + "\t\tCompletion Time: " + timeToComplete + "\t\t\t\tTime Processing: " + timeProcessing
                         + "\t\t\tTime Starving: " +  timeStarving + "\t\t\tTime Blocked: " + timeBlocked
                 );
             }
 
         }
+        int counter = 0;
+        System.out.println("\n");
+        for(WaitingLine line: waitingLines){
+            System.out.println("Queue " + counter + ": " + line.getSize());
+            counter++;
+        }
 
+        System.out.println("\n\n");
     }
     private void updateStatistics(){
         for(Stage focusStage: stages){

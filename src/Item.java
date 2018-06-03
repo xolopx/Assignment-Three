@@ -14,9 +14,11 @@ public class Item {
     private double timeEnteringQ;
     private double timeLeavingQ;
     private String path = "";            //path through stages taken by item.
+    private Random rGen;
 
     //Constructor simply takes the mean and range and the item will generate its own time.
-    Item(){
+    Item(Random randGen){
+        rGen = randGen;
         randValue = timeGenerator();
         timeEnteringQ = -1;
         timeLeavingQ = -1;
@@ -25,8 +27,8 @@ public class Item {
 
     //generates the time for the item.
     private double timeGenerator(){
-        Random r = new Random();
-       return r.nextDouble();
+
+       return rGen.nextDouble();
 
     }
     //TESTING: Prints out the time that the item needs to be produced.

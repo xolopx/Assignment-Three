@@ -124,6 +124,7 @@ public class Stage implements Comparable<Stage> {
                 break;
             //blocked
             case 0:
+                System.out.println("block timer increased");
                 timeBlocked += advanceTime;
                 break;
             //processing
@@ -150,7 +151,7 @@ public class Stage implements Comparable<Stage> {
             return true;
         }
     }
-    private double calculateCompletionTime(double theTime){
+    private double  calculateCompletionTime(double theTime){
         switch(mode)
         {
             case 1:  //stages 0, 1, 3 & 5.

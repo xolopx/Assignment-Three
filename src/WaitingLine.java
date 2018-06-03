@@ -26,22 +26,32 @@ public class WaitingLine{
     }
 
     public boolean isEmpty(){
-        if(state == 0){return true;}
-        else {return false;}
+        if(getSize() == 0){
+            return true;
+        }
+        else {
+            return false;
+        }
     }
     public boolean isFull(){
-        if(state == 2){return true;}
-        else {return false;}
+        if(getSize() == initialCapacity){
+            //System.out.println("The queue is full...");
+            return true;
+        }
+        else {
+            return false;
+        }
     }
     public void addItem(Item newItem, double theTime){
         //If there's room.
         if(!isFull()){
             theContents.add(newItem);
+            updateState();
             newItem.setTimeEntering(theTime);
             numQueuedItems+= this.getSize();
         }
 
-        updateState();
+
 
     }
     public void removeItem(int index){
@@ -53,7 +63,7 @@ public class WaitingLine{
         }
         else{
             System.out.println("you tried to take an item out of an empty queue.");
-            state = 0;
+
         }
     }
     public Item getItem(int index){
@@ -74,10 +84,10 @@ public class WaitingLine{
     }
     private void updateState(){
 
-        if(getSize()== initialCapacity ){
-            state = 2;
-        }else if(getSize() == 0){
+        if(isEmpty()){
             state = 0;
+        }else if(isFull()){
+            state = 2;
         }
         else {state = 1;}
 

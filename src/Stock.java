@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Created by Tom on 01-Jun-18.
@@ -7,22 +8,18 @@ import java.util.ArrayList;
 public class Stock{
 
     private Item stock;
+    private Random r = new Random();
 
     Stock(){
-        stock = new Item();
-    }
 
-    private void stockUp(){
-
-        Item newItem = new Item();
-        stock = newItem;
+        stock = new Item(r);
     }
 
     //Whenever stock is taken new stock is automatically created.
     public Item takeStock(){
 
         Item temp = stock;
-        stock = new Item();
+        stock = new Item(r);
         return temp;
     }
 }
