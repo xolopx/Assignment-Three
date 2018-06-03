@@ -1,58 +1,59 @@
-import java.util.Random;
-
 /**
  * Created by tom on 26/05/2018.
  *
- * Is an item with an associated (random) time that it takes to be completed.
- * When an item is created it generates its own time using timeGenerator.
+ * Is an item with an associated (random) time that is used in the stages it goes to to determine how long it will take
+ * to process. The item stored when it enters a stage and when it leaves. Furthermore it knows what path it has taken
+ * to reach its journey's end.
  */
-
-
 public class Item {
 
-    private double randValue;
-    private double timeEnteringQ;
-    private double timeLeavingQ;
-    private String path = "";            //path through stages taken by item.
-    private Random rGen;
+    private double randValue;           //Value used to determine the processing time for the item by stages.
+    private double timeEnteringQ;       //Time entering a queue.
+    private double timeLeavingQ;        //Time leaving a queue.
+    private String path = "";           //path through stages taken by item.
 
-    //Constructor simply takes the mean and range and the item will generate its own time.
-    Item(Random randGen){
-        rGen = randGen;
-        randValue = timeGenerator();
+
+    /**
+     * When an item is constructed its times entering and leaving are -1 and it is given a random value to which it will
+     * take on its journey to many stages and distant lands.
+     * @param r
+     */
+    Item(double r){
+
+        randValue = r;
         timeEnteringQ = -1;
         timeLeavingQ = -1;
     }
 
-
-    //generates the time for the item.
-    private double timeGenerator(){
-
-       return rGen.nextDouble();
-
-    }
-    //TESTING: Prints out the time that the item needs to be produced.
-    public String timeToString(){
-        return String.format("%4.2f",randValue);
-    }
-
+    /**
+     * When a stage needs to calculate the processing time for an item it needs that items random value so it calls
+     * this method.
+     * @return The random value of the item.
+     */
     public double getRand(){
         return randValue;
     }
-    public double getTimeEntering() {
-        return timeEnteringQ;
+
+    /**
+     * Appends the stage name of the stages the item visits to to "path". Used to determine statistics of production
+     * line.
+     * @param stageName The name of the stage that the item has just visited.
+     */
+    public void updatePath(String stageName){
+        path += stageName;
     }
+
     public void setTimeEntering(double timeEntering) {
         this.timeEnteringQ = timeEntering;
-    }
-    public double getTimeLeaving() {
-        return timeLeavingQ;
     }
     public void setTimeLeaving(double timeLeaving) {
         this.timeLeavingQ = timeLeaving;
     }
-    public void updatePath(String stageName){
-        path += stageName;
+    public double getTimeEntering() {
+        return timeEnteringQ;
+    }
+    public double getTimeLeaving() {
+        return timeLeavingQ;
     }
     public String getPath() {
         return path;

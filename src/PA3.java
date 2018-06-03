@@ -1,19 +1,12 @@
-/**
- * Created by tom on 21/05/2018.
- */
-
-
 
 public class PA3 {
 
     public static void main(String[] args){
 
-        //Read these in with a Scanner later.
-        double M = 1000;        //mean, for time calculation.
-        double N = 1000;        //range, for time calculation.
+        double M = Double.parseDouble(args[0]);        //mean, for time calculation.
+        double N = Double.parseDouble(args[1]);        //range, for time calculation.
+        int queueLength = Integer.parseInt(args[2]);   //length of queues.
         double productionTime = 10000000;
-        int queueLength = 7;
-
 
         Factory one = new Factory(productionTime, M, N, queueLength);
         one.run();

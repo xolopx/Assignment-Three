@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/Factory.java" line="172" />
+    <bookmark url="file://$PROJECT_DIR$/src/Factory.java" line="87" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a21bd138-4f22-4856-8b68-de1755ae76a5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TimeTrack.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/TimeTrack.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment-Three/Factory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment-Three/Factory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment-Three/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment-Three/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment-Three/PA3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment-Three/PA3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment-Three/Stage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment-Three/Stage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment-Three/Stock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment-Three/Stock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Assignment-Three/WaitingLine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment-Three/WaitingLine.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PA3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PA3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TimeLord.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WaitingLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WaitingLine.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -40,29 +31,86 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PA3.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PA3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PA3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Factory.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Factory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Factory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="262" lean-forward="true" selection-start-line="262" selection-end-line="262" />
+            <state relative-caret-position="119">
+              <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
               <folding>
+                <element signature="docComment;class#Factory#0" />
+                <element signature="docComment;method#Factory#0;class#Factory#0" />
                 <element signature="method#Factory#0;class#Factory#0" />
+                <element signature="docComment;method#initWaitingLines#0;class#Factory#0" />
                 <element signature="method#initWaitingLines#0;class#Factory#0" />
+                <element signature="docComment;method#initStages#0;class#Factory#0" />
                 <element signature="method#initStages#0;class#Factory#0" />
-                <element signature="method#updateStageStats#0;class#Factory#0" />
+                <element signature="docComment;method#assignQueues#0;class#Factory#0" />
                 <element signature="method#assignQueues#0;class#Factory#0" />
+                <element signature="docComment;method#nameStages#0;class#Factory#0" />
+                <element signature="method#nameStages#0;class#Factory#0" />
+                <element signature="docComment;method#setStageModes#0;class#Factory#0" />
+                <element signature="method#setStageModes#0;class#Factory#0" />
+                <element signature="docComment;method#run#0;class#Factory#0" />
+                <element signature="method#run#0;class#Factory#0" />
+                <element signature="docComment;method#updateFactory#0;class#Factory#0" />
+                <element signature="method#updateFactory#0;class#Factory#0" />
+                <element signature="docComment;method#processChanges#0;class#Factory#0" />
+                <element signature="method#processChanges#0;class#Factory#0" />
+                <element signature="docComment;method#updateTime#0;class#Factory#0" />
                 <element signature="method#updateTime#0;class#Factory#0" />
-                <element signature="method#printStages#0;class#Factory#0" />
+                <element signature="docComment;method#updateStatistics#0;class#Factory#0" />
                 <element signature="method#updateStatistics#0;class#Factory#0" />
+                <element signature="docComment;method#updateStageStats#0;class#Factory#0" />
+                <element signature="method#updateStageStats#0;class#Factory#0" />
+                <element signature="docComment;method#printStages#0;class#Factory#0" />
+                <element signature="method#printStages#0;class#Factory#0" />
+                <element signature="docComment;method#copyStages#0;class#Factory#0" />
+                <element signature="method#copyStages#0;class#Factory#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Stage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="175" selection-start-line="175" selection-end-line="175" />
+              <folding>
+                <element signature="docComment;class#Stage#0" />
+                <element signature="docComment;method#Stage#0;class#Stage#0" />
+                <element signature="method#Stage#0;class#Stage#0" />
+                <element signature="docComment;method#processItem#0;class#Stage#0" />
+                <element signature="method#processItem#0;class#Stage#0" />
+                <element signature="docComment;method#ejectItem#0;class#Stage#0" />
+                <element signature="method#ejectItem#0;class#Stage#0" />
+                <element signature="docComment;method#compareTo#0;class#Stage#0" />
+                <element signature="method#compareTo#0;class#Stage#0" />
+                <element signature="docComment;method#updateStatistics#0;class#Stage#0" />
+                <element signature="method#updateStatistics#0;class#Stage#0" />
+                <element signature="docComment;method#hasPrevious#0;class#Stage#0" />
+                <element signature="method#hasPrevious#0;class#Stage#0" />
+                <element signature="docComment;method#hasNext#0;class#Stage#0" />
+                <element signature="method#hasNext#0;class#Stage#0" />
+                <element signature="docComment;method#isPrevEmpty#0;class#Stage#0" />
+                <element signature="docComment;method#isNextFull#0;class#Stage#0" />
+                <element signature="docComment;method#calculateCompletionTime#0;class#Stage#0" />
+                <element signature="method#calculateCompletionTime#0;class#Stage#0" />
+                <element signature="docComment;method#takePrev#0;class#Stage#0" />
+                <element signature="method#setNextQ#0;class#Stage#0" />
+                <element signature="method#setPreviousQ#0;class#Stage#0" />
+                <element signature="method#getState#0;class#Stage#0" />
+                <element signature="method#getTime#0;class#Stage#0" />
+                <element signature="method#getNextQ#0;class#Stage#0" />
               </folding>
             </state>
           </provider>
@@ -71,15 +119,23 @@
       <file leaf-file-name="Stats.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Stats.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="102" column="65" selection-start-line="102" selection-start-column="51" selection-end-line="102" selection-end-column="65" />
+            <state>
               <folding>
                 <element signature="docComment;class#Stats#0" />
+                <element signature="docComment;method#Stats#0;class#Stats#0" />
                 <element signature="method#Stats#0;class#Stats#0" />
+                <element signature="docComment;method#updateNumProcessed#0;class#Stats#0" />
+                <element signature="docComment;method#updateNumCreated#0;class#Stats#0" />
                 <element signature="method#updateNumCreated#0;class#Stats#0" />
+                <element signature="docComment;method#updateTime#0;class#Stats#0" />
                 <element signature="method#updateTime#0;class#Stats#0" />
+                <element signature="docComment;method#printStats#0;class#Stats#0" />
                 <element signature="method#printStats#0;class#Stats#0" />
+                <element signature="docComment;method#updateStageStateTimes#0;class#Stats#0" />
+                <element signature="method#updateStageStateTimes#0;class#Stats#0" />
+                <element signature="docComment;method#updateQueues#0;class#Stats#0" />
                 <element signature="method#updateQueues#0;class#Stats#0" />
+                <element signature="docComment;method#updatePaths#0;class#Stats#0" />
                 <element signature="method#updatePaths#0;class#Stats#0" />
               </folding>
             </state>
@@ -89,10 +145,12 @@
       <file leaf-file-name="Stock.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Stock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+            <state relative-caret-position="323">
+              <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#Stock#0" />
+                <element signature="docComment;method#Stock#0;class#Stock#0" />
+                <element signature="docComment;method#takeStock#0;class#Stock#0" />
               </folding>
             </state>
           </provider>
@@ -101,10 +159,13 @@
       <file leaf-file-name="Item.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            <state>
               <folding>
                 <element signature="docComment;class#Item#0" />
+                <element signature="docComment;method#Item#0;class#Item#0" />
+                <element signature="method#Item#0;class#Item#0" />
+                <element signature="docComment;method#getRand#0;class#Item#0" />
+                <element signature="docComment;method#updatePath#0;class#Item#0" />
               </folding>
             </state>
           </provider>
@@ -113,16 +174,26 @@
       <file leaf-file-name="WaitingLine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WaitingLine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+            <state relative-caret-position="663">
+              <caret line="134" column="4" selection-start-line="134" selection-start-column="4" selection-end-line="134" selection-end-column="4" />
               <folding>
                 <element signature="docComment;class#WaitingLine#0" />
+                <element signature="docComment;method#WaitingLine#0;class#WaitingLine#0" />
                 <element signature="method#WaitingLine#0;class#WaitingLine#0" />
-                <element signature="method#WaitingLine#1;class#WaitingLine#0" />
+                <element signature="docComment;method#isEmpty#0;class#WaitingLine#0" />
                 <element signature="method#isEmpty#0;class#WaitingLine#0" />
+                <element signature="docComment;method#isFull#0;class#WaitingLine#0" />
+                <element signature="method#isFull#0;class#WaitingLine#0" />
+                <element signature="docComment;method#addItem#0;class#WaitingLine#0" />
+                <element signature="method#addItem#0;class#WaitingLine#0" />
+                <element signature="docComment;method#removeItem#0;class#WaitingLine#0" />
                 <element signature="method#removeItem#0;class#WaitingLine#0" />
+                <element signature="docComment;method#getItem#0;class#WaitingLine#0" />
+                <element signature="docComment;method#takeItem#0;class#WaitingLine#0" />
                 <element signature="method#takeItem#0;class#WaitingLine#0" />
+                <element signature="docComment;method#updateState#0;class#WaitingLine#0" />
                 <element signature="method#updateState#0;class#WaitingLine#0" />
+                <element signature="docComment;method#updateQueuedTime#0;class#WaitingLine#0" />
               </folding>
             </state>
           </provider>
@@ -152,6 +223,7 @@
       <find>setPreviousQueue</find>
       <find>calculateProcessing</find>
       <find>(focusStage.getTimeBlocked()/finishTime)*100 ;</find>
+      <find>theTime</find>
     </findStrings>
     <replaceStrings>
       <replace>setNextQueue</replace>
@@ -162,6 +234,7 @@
       <replace>setPreviousQ</replace>
       <replace>calculateCompletion</replace>
       <replace>focusStage.getTimeBlocked();</replace>
+      <replace>currentTime</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -178,13 +251,13 @@
         <option value="$PROJECT_DIR$/src/WaitLine.java" />
         <option value="$PROJECT_DIR$/src/Node.java" />
         <option value="$PROJECT_DIR$/src/LinkedList.java" />
-        <option value="$PROJECT_DIR$/src/Stats.java" />
         <option value="$PROJECT_DIR$/src/Stage.java" />
-        <option value="$PROJECT_DIR$/src/WaitingLine.java" />
-        <option value="$PROJECT_DIR$/src/Stock.java" />
+        <option value="$PROJECT_DIR$/src/Stats.java" />
         <option value="$PROJECT_DIR$/src/Factory.java" />
-        <option value="$PROJECT_DIR$/src/Item.java" />
         <option value="$PROJECT_DIR$/src/PA3.java" />
+        <option value="$PROJECT_DIR$/src/Stock.java" />
+        <option value="$PROJECT_DIR$/src/Item.java" />
+        <option value="$PROJECT_DIR$/src/WaitingLine.java" />
       </list>
     </option>
   </component>
@@ -260,6 +333,7 @@
     <configuration name="Assignment 3" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="PA3" />
       <module name="Assignment-Three" />
+      <option name="PROGRAM_PARAMETERS" value="1000 1000 7" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -361,12 +435,12 @@
       <workItem from="1527947561876" duration="3929000" />
       <workItem from="1527990167858" duration="5615000" />
       <workItem from="1527995878734" duration="1229000" />
-      <workItem from="1527997300977" duration="24067000" />
+      <workItem from="1527997300977" duration="34547000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94752000" />
+    <option name="totallyTimeSpent" value="105232000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -391,19 +465,19 @@
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32929516" />
-      <window_info active="true" anchor="right" x="-1920" y="23" width="1920" height="1017" id="Run" order="10" type="WINDOWED" visible="true" weight="0.25625" />
+      <window_info anchor="right" x="-1920" y="23" width="1920" height="1017" id="Run" order="10" type="WINDOWED" weight="0.25625" />
       <window_info anchor="bottom" x="-959" y="31" width="958" height="1008" id="Terminal" order="9" type="WINDOWED" weight="0.32929516" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" x="-959" y="31" width="958" height="1008" id="Project" order="0" weight="0.1671875" />
+      <window_info content_ui="combo" x="-959" y="31" width="958" height="1008" id="Project" order="0" visible="true" weight="0.1671875" />
       <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32837406" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32837406" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" x="-1920" y="23" width="1920" height="1017" id="Debug" order="2" type="WINDOWED" visible="true" weight="0.39957035" />
+      <window_info anchor="bottom" x="-1920" y="23" width="1920" height="1017" id="Debug" order="2" type="WINDOWED" weight="0.39957035" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info id="Nl-Palette" order="2" />
@@ -499,16 +573,30 @@
           <caret line="98" column="37" lean-forward="true" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="37" />
           <folding>
             <element signature="docComment;class#Stage#0" />
+            <element signature="docComment;method#Stage#0;class#Stage#0" />
             <element signature="method#Stage#0;class#Stage#0" />
+            <element signature="docComment;method#processItem#0;class#Stage#0" />
+            <element signature="method#processItem#0;class#Stage#0" />
+            <element signature="docComment;method#ejectItem#0;class#Stage#0" />
+            <element signature="method#ejectItem#0;class#Stage#0" />
+            <element signature="docComment;method#compareTo#0;class#Stage#0" />
             <element signature="method#compareTo#0;class#Stage#0" />
-            <element signature="method#getTime#0;class#Stage#0" />
+            <element signature="docComment;method#updateStatistics#0;class#Stage#0" />
+            <element signature="method#updateStatistics#0;class#Stage#0" />
+            <element signature="docComment;method#hasPrevious#0;class#Stage#0" />
+            <element signature="method#hasPrevious#0;class#Stage#0" />
+            <element signature="docComment;method#hasNext#0;class#Stage#0" />
+            <element signature="method#hasNext#0;class#Stage#0" />
+            <element signature="docComment;method#isPrevEmpty#0;class#Stage#0" />
+            <element signature="docComment;method#isNextFull#0;class#Stage#0" />
+            <element signature="docComment;method#calculateCompletionTime#0;class#Stage#0" />
+            <element signature="method#calculateCompletionTime#0;class#Stage#0" />
+            <element signature="docComment;method#takePrev#0;class#Stage#0" />
             <element signature="method#setNextQ#0;class#Stage#0" />
             <element signature="method#setPreviousQ#0;class#Stage#0" />
             <element signature="method#getState#0;class#Stage#0" />
-            <element signature="method#hasPrevious#0;class#Stage#0" />
-            <element signature="method#hasNext#0;class#Stage#0" />
-            <element signature="e#5674#5675#0" expanded="true" />
-            <element signature="e#5710#5711#0" expanded="true" />
+            <element signature="method#getTime#0;class#Stage#0" />
+            <element signature="method#getNextQ#0;class#Stage#0" />
           </folding>
         </state>
       </provider>
@@ -518,14 +606,35 @@
         <state relative-caret-position="3174">
           <caret line="138" selection-start-line="138" selection-end-line="138" />
           <folding>
+            <element signature="docComment;class#Factory#0" />
+            <element signature="docComment;method#Factory#0;class#Factory#0" />
             <element signature="method#Factory#0;class#Factory#0" />
+            <element signature="docComment;method#initWaitingLines#0;class#Factory#0" />
             <element signature="method#initWaitingLines#0;class#Factory#0" />
+            <element signature="docComment;method#initStages#0;class#Factory#0" />
             <element signature="method#initStages#0;class#Factory#0" />
-            <element signature="method#updateStageStats#0;class#Factory#0" />
+            <element signature="docComment;method#assignQueues#0;class#Factory#0" />
             <element signature="method#assignQueues#0;class#Factory#0" />
+            <element signature="docComment;method#nameStages#0;class#Factory#0" />
+            <element signature="method#nameStages#0;class#Factory#0" />
+            <element signature="docComment;method#setStageModes#0;class#Factory#0" />
+            <element signature="method#setStageModes#0;class#Factory#0" />
+            <element signature="docComment;method#run#0;class#Factory#0" />
+            <element signature="method#run#0;class#Factory#0" />
+            <element signature="docComment;method#updateFactory#0;class#Factory#0" />
+            <element signature="method#updateFactory#0;class#Factory#0" />
+            <element signature="docComment;method#processChanges#0;class#Factory#0" />
+            <element signature="method#processChanges#0;class#Factory#0" />
+            <element signature="docComment;method#updateTime#0;class#Factory#0" />
             <element signature="method#updateTime#0;class#Factory#0" />
-            <element signature="method#printStages#0;class#Factory#0" />
+            <element signature="docComment;method#updateStatistics#0;class#Factory#0" />
             <element signature="method#updateStatistics#0;class#Factory#0" />
+            <element signature="docComment;method#updateStageStats#0;class#Factory#0" />
+            <element signature="method#updateStageStats#0;class#Factory#0" />
+            <element signature="docComment;method#printStages#0;class#Factory#0" />
+            <element signature="method#printStages#0;class#Factory#0" />
+            <element signature="docComment;method#copyStages#0;class#Factory#0" />
+            <element signature="method#copyStages#0;class#Factory#0" />
           </folding>
         </state>
       </provider>
@@ -542,14 +651,35 @@
         <state relative-caret-position="1020">
           <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
           <folding>
+            <element signature="docComment;class#Factory#0" />
+            <element signature="docComment;method#Factory#0;class#Factory#0" />
             <element signature="method#Factory#0;class#Factory#0" />
+            <element signature="docComment;method#initWaitingLines#0;class#Factory#0" />
             <element signature="method#initWaitingLines#0;class#Factory#0" />
+            <element signature="docComment;method#initStages#0;class#Factory#0" />
             <element signature="method#initStages#0;class#Factory#0" />
-            <element signature="method#updateStageStats#0;class#Factory#0" />
+            <element signature="docComment;method#assignQueues#0;class#Factory#0" />
             <element signature="method#assignQueues#0;class#Factory#0" />
+            <element signature="docComment;method#nameStages#0;class#Factory#0" />
+            <element signature="method#nameStages#0;class#Factory#0" />
+            <element signature="docComment;method#setStageModes#0;class#Factory#0" />
+            <element signature="method#setStageModes#0;class#Factory#0" />
+            <element signature="docComment;method#run#0;class#Factory#0" />
+            <element signature="method#run#0;class#Factory#0" />
+            <element signature="docComment;method#updateFactory#0;class#Factory#0" />
+            <element signature="method#updateFactory#0;class#Factory#0" />
+            <element signature="docComment;method#processChanges#0;class#Factory#0" />
+            <element signature="method#processChanges#0;class#Factory#0" />
+            <element signature="docComment;method#updateTime#0;class#Factory#0" />
             <element signature="method#updateTime#0;class#Factory#0" />
-            <element signature="method#printStages#0;class#Factory#0" />
+            <element signature="docComment;method#updateStatistics#0;class#Factory#0" />
             <element signature="method#updateStatistics#0;class#Factory#0" />
+            <element signature="docComment;method#updateStageStats#0;class#Factory#0" />
+            <element signature="method#updateStageStats#0;class#Factory#0" />
+            <element signature="docComment;method#printStages#0;class#Factory#0" />
+            <element signature="method#printStages#0;class#Factory#0" />
+            <element signature="docComment;method#copyStages#0;class#Factory#0" />
+            <element signature="method#copyStages#0;class#Factory#0" />
           </folding>
         </state>
       </provider>
@@ -560,12 +690,22 @@
           <caret line="36" column="37" lean-forward="true" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
           <folding>
             <element signature="docComment;class#WaitingLine#0" />
+            <element signature="docComment;method#WaitingLine#0;class#WaitingLine#0" />
             <element signature="method#WaitingLine#0;class#WaitingLine#0" />
-            <element signature="method#WaitingLine#1;class#WaitingLine#0" />
+            <element signature="docComment;method#isEmpty#0;class#WaitingLine#0" />
             <element signature="method#isEmpty#0;class#WaitingLine#0" />
+            <element signature="docComment;method#isFull#0;class#WaitingLine#0" />
+            <element signature="method#isFull#0;class#WaitingLine#0" />
+            <element signature="docComment;method#addItem#0;class#WaitingLine#0" />
+            <element signature="method#addItem#0;class#WaitingLine#0" />
+            <element signature="docComment;method#removeItem#0;class#WaitingLine#0" />
             <element signature="method#removeItem#0;class#WaitingLine#0" />
+            <element signature="docComment;method#getItem#0;class#WaitingLine#0" />
+            <element signature="docComment;method#takeItem#0;class#WaitingLine#0" />
             <element signature="method#takeItem#0;class#WaitingLine#0" />
+            <element signature="docComment;method#updateState#0;class#WaitingLine#0" />
             <element signature="method#updateState#0;class#WaitingLine#0" />
+            <element signature="docComment;method#updateQueuedTime#0;class#WaitingLine#0" />
           </folding>
         </state>
       </provider>
@@ -590,16 +730,30 @@
           <caret line="107" column="25" lean-forward="true" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
           <folding>
             <element signature="docComment;class#Stage#0" />
+            <element signature="docComment;method#Stage#0;class#Stage#0" />
             <element signature="method#Stage#0;class#Stage#0" />
+            <element signature="docComment;method#processItem#0;class#Stage#0" />
+            <element signature="method#processItem#0;class#Stage#0" />
+            <element signature="docComment;method#ejectItem#0;class#Stage#0" />
+            <element signature="method#ejectItem#0;class#Stage#0" />
+            <element signature="docComment;method#compareTo#0;class#Stage#0" />
             <element signature="method#compareTo#0;class#Stage#0" />
-            <element signature="method#getTime#0;class#Stage#0" />
+            <element signature="docComment;method#updateStatistics#0;class#Stage#0" />
+            <element signature="method#updateStatistics#0;class#Stage#0" />
+            <element signature="docComment;method#hasPrevious#0;class#Stage#0" />
+            <element signature="method#hasPrevious#0;class#Stage#0" />
+            <element signature="docComment;method#hasNext#0;class#Stage#0" />
+            <element signature="method#hasNext#0;class#Stage#0" />
+            <element signature="docComment;method#isPrevEmpty#0;class#Stage#0" />
+            <element signature="docComment;method#isNextFull#0;class#Stage#0" />
+            <element signature="docComment;method#calculateCompletionTime#0;class#Stage#0" />
+            <element signature="method#calculateCompletionTime#0;class#Stage#0" />
+            <element signature="docComment;method#takePrev#0;class#Stage#0" />
             <element signature="method#setNextQ#0;class#Stage#0" />
             <element signature="method#setPreviousQ#0;class#Stage#0" />
             <element signature="method#getState#0;class#Stage#0" />
-            <element signature="method#hasPrevious#0;class#Stage#0" />
-            <element signature="method#hasNext#0;class#Stage#0" />
-            <element signature="e#5674#5675#0" expanded="true" />
-            <element signature="e#5710#5711#0" expanded="true" />
+            <element signature="method#getTime#0;class#Stage#0" />
+            <element signature="method#getNextQ#0;class#Stage#0" />
           </folding>
         </state>
       </provider>
@@ -617,16 +771,30 @@
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="docComment;class#Stage#0" />
+            <element signature="docComment;method#Stage#0;class#Stage#0" />
             <element signature="method#Stage#0;class#Stage#0" />
+            <element signature="docComment;method#processItem#0;class#Stage#0" />
+            <element signature="method#processItem#0;class#Stage#0" />
+            <element signature="docComment;method#ejectItem#0;class#Stage#0" />
+            <element signature="method#ejectItem#0;class#Stage#0" />
+            <element signature="docComment;method#compareTo#0;class#Stage#0" />
             <element signature="method#compareTo#0;class#Stage#0" />
-            <element signature="method#getTime#0;class#Stage#0" />
+            <element signature="docComment;method#updateStatistics#0;class#Stage#0" />
+            <element signature="method#updateStatistics#0;class#Stage#0" />
+            <element signature="docComment;method#hasPrevious#0;class#Stage#0" />
+            <element signature="method#hasPrevious#0;class#Stage#0" />
+            <element signature="docComment;method#hasNext#0;class#Stage#0" />
+            <element signature="method#hasNext#0;class#Stage#0" />
+            <element signature="docComment;method#isPrevEmpty#0;class#Stage#0" />
+            <element signature="docComment;method#isNextFull#0;class#Stage#0" />
+            <element signature="docComment;method#calculateCompletionTime#0;class#Stage#0" />
+            <element signature="method#calculateCompletionTime#0;class#Stage#0" />
+            <element signature="docComment;method#takePrev#0;class#Stage#0" />
             <element signature="method#setNextQ#0;class#Stage#0" />
             <element signature="method#setPreviousQ#0;class#Stage#0" />
             <element signature="method#getState#0;class#Stage#0" />
-            <element signature="method#hasPrevious#0;class#Stage#0" />
-            <element signature="method#hasNext#0;class#Stage#0" />
-            <element signature="e#5674#5675#0" expanded="true" />
-            <element signature="e#5710#5711#0" expanded="true" />
+            <element signature="method#getTime#0;class#Stage#0" />
+            <element signature="method#getNextQ#0;class#Stage#0" />
           </folding>
         </state>
       </provider>
@@ -642,14 +810,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
+            <element signature="docComment;class#Factory#0" />
+            <element signature="docComment;method#Factory#0;class#Factory#0" />
             <element signature="method#Factory#0;class#Factory#0" />
+            <element signature="docComment;method#initWaitingLines#0;class#Factory#0" />
             <element signature="method#initWaitingLines#0;class#Factory#0" />
+            <element signature="docComment;method#initStages#0;class#Factory#0" />
             <element signature="method#initStages#0;class#Factory#0" />
-            <element signature="method#updateStageStats#0;class#Factory#0" />
+            <element signature="docComment;method#assignQueues#0;class#Factory#0" />
             <element signature="method#assignQueues#0;class#Factory#0" />
+            <element signature="docComment;method#nameStages#0;class#Factory#0" />
+            <element signature="method#nameStages#0;class#Factory#0" />
+            <element signature="docComment;method#setStageModes#0;class#Factory#0" />
+            <element signature="method#setStageModes#0;class#Factory#0" />
+            <element signature="docComment;method#run#0;class#Factory#0" />
+            <element signature="method#run#0;class#Factory#0" />
+            <element signature="docComment;method#updateFactory#0;class#Factory#0" />
+            <element signature="method#updateFactory#0;class#Factory#0" />
+            <element signature="docComment;method#processChanges#0;class#Factory#0" />
+            <element signature="method#processChanges#0;class#Factory#0" />
+            <element signature="docComment;method#updateTime#0;class#Factory#0" />
             <element signature="method#updateTime#0;class#Factory#0" />
-            <element signature="method#printStages#0;class#Factory#0" />
+            <element signature="docComment;method#updateStatistics#0;class#Factory#0" />
             <element signature="method#updateStatistics#0;class#Factory#0" />
+            <element signature="docComment;method#updateStageStats#0;class#Factory#0" />
+            <element signature="method#updateStageStats#0;class#Factory#0" />
+            <element signature="docComment;method#printStages#0;class#Factory#0" />
+            <element signature="method#printStages#0;class#Factory#0" />
+            <element signature="docComment;method#copyStages#0;class#Factory#0" />
+            <element signature="method#copyStages#0;class#Factory#0" />
           </folding>
         </state>
       </provider>
@@ -666,14 +855,35 @@
         <state relative-caret-position="690">
           <caret line="76" selection-start-line="76" selection-end-line="76" />
           <folding>
+            <element signature="docComment;class#Factory#0" />
+            <element signature="docComment;method#Factory#0;class#Factory#0" />
             <element signature="method#Factory#0;class#Factory#0" />
+            <element signature="docComment;method#initWaitingLines#0;class#Factory#0" />
             <element signature="method#initWaitingLines#0;class#Factory#0" />
+            <element signature="docComment;method#initStages#0;class#Factory#0" />
             <element signature="method#initStages#0;class#Factory#0" />
-            <element signature="method#updateStageStats#0;class#Factory#0" />
+            <element signature="docComment;method#assignQueues#0;class#Factory#0" />
             <element signature="method#assignQueues#0;class#Factory#0" />
+            <element signature="docComment;method#nameStages#0;class#Factory#0" />
+            <element signature="method#nameStages#0;class#Factory#0" />
+            <element signature="docComment;method#setStageModes#0;class#Factory#0" />
+            <element signature="method#setStageModes#0;class#Factory#0" />
+            <element signature="docComment;method#run#0;class#Factory#0" />
+            <element signature="method#run#0;class#Factory#0" />
+            <element signature="docComment;method#updateFactory#0;class#Factory#0" />
+            <element signature="method#updateFactory#0;class#Factory#0" />
+            <element signature="docComment;method#processChanges#0;class#Factory#0" />
+            <element signature="method#processChanges#0;class#Factory#0" />
+            <element signature="docComment;method#updateTime#0;class#Factory#0" />
             <element signature="method#updateTime#0;class#Factory#0" />
-            <element signature="method#printStages#0;class#Factory#0" />
+            <element signature="docComment;method#updateStatistics#0;class#Factory#0" />
             <element signature="method#updateStatistics#0;class#Factory#0" />
+            <element signature="docComment;method#updateStageStats#0;class#Factory#0" />
+            <element signature="method#updateStageStats#0;class#Factory#0" />
+            <element signature="docComment;method#printStages#0;class#Factory#0" />
+            <element signature="method#printStages#0;class#Factory#0" />
+            <element signature="docComment;method#copyStages#0;class#Factory#0" />
+            <element signature="method#copyStages#0;class#Factory#0" />
           </folding>
         </state>
       </provider>
@@ -706,16 +916,30 @@
           <caret line="78" column="103" selection-start-line="78" selection-start-column="103" selection-end-line="78" selection-end-column="103" />
           <folding>
             <element signature="docComment;class#Stage#0" />
+            <element signature="docComment;method#Stage#0;class#Stage#0" />
             <element signature="method#Stage#0;class#Stage#0" />
+            <element signature="docComment;method#processItem#0;class#Stage#0" />
+            <element signature="method#processItem#0;class#Stage#0" />
+            <element signature="docComment;method#ejectItem#0;class#Stage#0" />
+            <element signature="method#ejectItem#0;class#Stage#0" />
+            <element signature="docComment;method#compareTo#0;class#Stage#0" />
             <element signature="method#compareTo#0;class#Stage#0" />
-            <element signature="method#getTime#0;class#Stage#0" />
+            <element signature="docComment;method#updateStatistics#0;class#Stage#0" />
+            <element signature="method#updateStatistics#0;class#Stage#0" />
+            <element signature="docComment;method#hasPrevious#0;class#Stage#0" />
+            <element signature="method#hasPrevious#0;class#Stage#0" />
+            <element signature="docComment;method#hasNext#0;class#Stage#0" />
+            <element signature="method#hasNext#0;class#Stage#0" />
+            <element signature="docComment;method#isPrevEmpty#0;class#Stage#0" />
+            <element signature="docComment;method#isNextFull#0;class#Stage#0" />
+            <element signature="docComment;method#calculateCompletionTime#0;class#Stage#0" />
+            <element signature="method#calculateCompletionTime#0;class#Stage#0" />
+            <element signature="docComment;method#takePrev#0;class#Stage#0" />
             <element signature="method#setNextQ#0;class#Stage#0" />
             <element signature="method#setPreviousQ#0;class#Stage#0" />
             <element signature="method#getState#0;class#Stage#0" />
-            <element signature="method#hasPrevious#0;class#Stage#0" />
-            <element signature="method#hasNext#0;class#Stage#0" />
-            <element signature="e#5674#5675#0" expanded="true" />
-            <element signature="e#5710#5711#0" expanded="true" />
+            <element signature="method#getTime#0;class#Stage#0" />
+            <element signature="method#getNextQ#0;class#Stage#0" />
           </folding>
         </state>
       </provider>
@@ -734,16 +958,30 @@
           <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
           <folding>
             <element signature="docComment;class#Stage#0" />
+            <element signature="docComment;method#Stage#0;class#Stage#0" />
             <element signature="method#Stage#0;class#Stage#0" />
+            <element signature="docComment;method#processItem#0;class#Stage#0" />
+            <element signature="method#processItem#0;class#Stage#0" />
+            <element signature="docComment;method#ejectItem#0;class#Stage#0" />
+            <element signature="method#ejectItem#0;class#Stage#0" />
+            <element signature="docComment;method#compareTo#0;class#Stage#0" />
             <element signature="method#compareTo#0;class#Stage#0" />
-            <element signature="method#getTime#0;class#Stage#0" />
+            <element signature="docComment;method#updateStatistics#0;class#Stage#0" />
+            <element signature="method#updateStatistics#0;class#Stage#0" />
+            <element signature="docComment;method#hasPrevious#0;class#Stage#0" />
+            <element signature="method#hasPrevious#0;class#Stage#0" />
+            <element signature="docComment;method#hasNext#0;class#Stage#0" />
+            <element signature="method#hasNext#0;class#Stage#0" />
+            <element signature="docComment;method#isPrevEmpty#0;class#Stage#0" />
+            <element signature="docComment;method#isNextFull#0;class#Stage#0" />
+            <element signature="docComment;method#calculateCompletionTime#0;class#Stage#0" />
+            <element signature="method#calculateCompletionTime#0;class#Stage#0" />
+            <element signature="docComment;method#takePrev#0;class#Stage#0" />
             <element signature="method#setNextQ#0;class#Stage#0" />
             <element signature="method#setPreviousQ#0;class#Stage#0" />
             <element signature="method#getState#0;class#Stage#0" />
-            <element signature="method#hasPrevious#0;class#Stage#0" />
-            <element signature="method#hasNext#0;class#Stage#0" />
-            <element signature="e#5674#5675#0" expanded="true" />
-            <element signature="e#5710#5711#0" expanded="true" />
+            <element signature="method#getTime#0;class#Stage#0" />
+            <element signature="method#getNextQ#0;class#Stage#0" />
           </folding>
         </state>
       </provider>
@@ -845,99 +1083,157 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
-          <folding>
-            <element signature="docComment;class#Stage#0" />
-            <element signature="method#Stage#0;class#Stage#0" />
-            <element signature="method#compareTo#0;class#Stage#0" />
-            <element signature="method#getTime#0;class#Stage#0" />
-            <element signature="method#setNextQ#0;class#Stage#0" />
-            <element signature="method#setPreviousQ#0;class#Stage#0" />
-            <element signature="method#getState#0;class#Stage#0" />
-            <element signature="method#hasPrevious#0;class#Stage#0" />
-            <element signature="method#hasNext#0;class#Stage#0" />
-            <element signature="e#5674#5675#0" expanded="true" />
-            <element signature="e#5710#5711#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stats.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="102" column="65" selection-start-line="102" selection-start-column="51" selection-end-line="102" selection-end-column="65" />
-          <folding>
-            <element signature="docComment;class#Stats#0" />
-            <element signature="method#Stats#0;class#Stats#0" />
-            <element signature="method#updateNumCreated#0;class#Stats#0" />
-            <element signature="method#updateTime#0;class#Stats#0" />
-            <element signature="method#printStats#0;class#Stats#0" />
-            <element signature="method#updateQueues#0;class#Stats#0" />
-            <element signature="method#updatePaths#0;class#Stats#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WaitingLine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+        <state relative-caret-position="663">
+          <caret line="134" column="4" selection-start-line="134" selection-start-column="4" selection-end-line="134" selection-end-column="4" />
           <folding>
             <element signature="docComment;class#WaitingLine#0" />
+            <element signature="docComment;method#WaitingLine#0;class#WaitingLine#0" />
             <element signature="method#WaitingLine#0;class#WaitingLine#0" />
-            <element signature="method#WaitingLine#1;class#WaitingLine#0" />
+            <element signature="docComment;method#isEmpty#0;class#WaitingLine#0" />
             <element signature="method#isEmpty#0;class#WaitingLine#0" />
+            <element signature="docComment;method#isFull#0;class#WaitingLine#0" />
+            <element signature="method#isFull#0;class#WaitingLine#0" />
+            <element signature="docComment;method#addItem#0;class#WaitingLine#0" />
+            <element signature="method#addItem#0;class#WaitingLine#0" />
+            <element signature="docComment;method#removeItem#0;class#WaitingLine#0" />
             <element signature="method#removeItem#0;class#WaitingLine#0" />
+            <element signature="docComment;method#getItem#0;class#WaitingLine#0" />
+            <element signature="docComment;method#takeItem#0;class#WaitingLine#0" />
             <element signature="method#takeItem#0;class#WaitingLine#0" />
+            <element signature="docComment;method#updateState#0;class#WaitingLine#0" />
             <element signature="method#updateState#0;class#WaitingLine#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#updateQueuedTime#0;class#WaitingLine#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state>
           <folding>
             <element signature="docComment;class#Item#0" />
+            <element signature="docComment;method#Item#0;class#Item#0" />
+            <element signature="method#Item#0;class#Item#0" />
+            <element signature="docComment;method#getRand#0;class#Item#0" />
+            <element signature="docComment;method#updatePath#0;class#Item#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding>
+            <element signature="docComment;class#Stock#0" />
+            <element signature="docComment;method#Stock#0;class#Stock#0" />
+            <element signature="docComment;method#takeStock#0;class#Stock#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="docComment;class#Stats#0" />
+            <element signature="docComment;method#Stats#0;class#Stats#0" />
+            <element signature="method#Stats#0;class#Stats#0" />
+            <element signature="docComment;method#updateNumProcessed#0;class#Stats#0" />
+            <element signature="docComment;method#updateNumCreated#0;class#Stats#0" />
+            <element signature="method#updateNumCreated#0;class#Stats#0" />
+            <element signature="docComment;method#updateTime#0;class#Stats#0" />
+            <element signature="method#updateTime#0;class#Stats#0" />
+            <element signature="docComment;method#printStats#0;class#Stats#0" />
+            <element signature="method#printStats#0;class#Stats#0" />
+            <element signature="docComment;method#updateStageStateTimes#0;class#Stats#0" />
+            <element signature="method#updateStageStateTimes#0;class#Stats#0" />
+            <element signature="docComment;method#updateQueues#0;class#Stats#0" />
+            <element signature="method#updateQueues#0;class#Stats#0" />
+            <element signature="docComment;method#updatePaths#0;class#Stats#0" />
+            <element signature="method#updatePaths#0;class#Stats#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="175" selection-start-line="175" selection-end-line="175" />
+          <folding>
+            <element signature="docComment;class#Stage#0" />
+            <element signature="docComment;method#Stage#0;class#Stage#0" />
+            <element signature="method#Stage#0;class#Stage#0" />
+            <element signature="docComment;method#processItem#0;class#Stage#0" />
+            <element signature="method#processItem#0;class#Stage#0" />
+            <element signature="docComment;method#ejectItem#0;class#Stage#0" />
+            <element signature="method#ejectItem#0;class#Stage#0" />
+            <element signature="docComment;method#compareTo#0;class#Stage#0" />
+            <element signature="method#compareTo#0;class#Stage#0" />
+            <element signature="docComment;method#updateStatistics#0;class#Stage#0" />
+            <element signature="method#updateStatistics#0;class#Stage#0" />
+            <element signature="docComment;method#hasPrevious#0;class#Stage#0" />
+            <element signature="method#hasPrevious#0;class#Stage#0" />
+            <element signature="docComment;method#hasNext#0;class#Stage#0" />
+            <element signature="method#hasNext#0;class#Stage#0" />
+            <element signature="docComment;method#isPrevEmpty#0;class#Stage#0" />
+            <element signature="docComment;method#isNextFull#0;class#Stage#0" />
+            <element signature="docComment;method#calculateCompletionTime#0;class#Stage#0" />
+            <element signature="method#calculateCompletionTime#0;class#Stage#0" />
+            <element signature="docComment;method#takePrev#0;class#Stage#0" />
+            <element signature="method#setNextQ#0;class#Stage#0" />
+            <element signature="method#setPreviousQ#0;class#Stage#0" />
+            <element signature="method#getState#0;class#Stage#0" />
+            <element signature="method#getTime#0;class#Stage#0" />
+            <element signature="method#getNextQ#0;class#Stage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Factory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+          <folding>
+            <element signature="docComment;class#Factory#0" />
+            <element signature="docComment;method#Factory#0;class#Factory#0" />
+            <element signature="method#Factory#0;class#Factory#0" />
+            <element signature="docComment;method#initWaitingLines#0;class#Factory#0" />
+            <element signature="method#initWaitingLines#0;class#Factory#0" />
+            <element signature="docComment;method#initStages#0;class#Factory#0" />
+            <element signature="method#initStages#0;class#Factory#0" />
+            <element signature="docComment;method#assignQueues#0;class#Factory#0" />
+            <element signature="method#assignQueues#0;class#Factory#0" />
+            <element signature="docComment;method#nameStages#0;class#Factory#0" />
+            <element signature="method#nameStages#0;class#Factory#0" />
+            <element signature="docComment;method#setStageModes#0;class#Factory#0" />
+            <element signature="method#setStageModes#0;class#Factory#0" />
+            <element signature="docComment;method#run#0;class#Factory#0" />
+            <element signature="method#run#0;class#Factory#0" />
+            <element signature="docComment;method#updateFactory#0;class#Factory#0" />
+            <element signature="method#updateFactory#0;class#Factory#0" />
+            <element signature="docComment;method#processChanges#0;class#Factory#0" />
+            <element signature="method#processChanges#0;class#Factory#0" />
+            <element signature="docComment;method#updateTime#0;class#Factory#0" />
+            <element signature="method#updateTime#0;class#Factory#0" />
+            <element signature="docComment;method#updateStatistics#0;class#Factory#0" />
+            <element signature="method#updateStatistics#0;class#Factory#0" />
+            <element signature="docComment;method#updateStageStats#0;class#Factory#0" />
+            <element signature="method#updateStageStats#0;class#Factory#0" />
+            <element signature="docComment;method#printStages#0;class#Factory#0" />
+            <element signature="method#printStages#0;class#Factory#0" />
+            <element signature="docComment;method#copyStages#0;class#Factory#0" />
+            <element signature="method#copyStages#0;class#Factory#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PA3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Factory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="262" lean-forward="true" selection-start-line="262" selection-end-line="262" />
-          <folding>
-            <element signature="method#Factory#0;class#Factory#0" />
-            <element signature="method#initWaitingLines#0;class#Factory#0" />
-            <element signature="method#initStages#0;class#Factory#0" />
-            <element signature="method#updateStageStats#0;class#Factory#0" />
-            <element signature="method#assignQueues#0;class#Factory#0" />
-            <element signature="method#updateTime#0;class#Factory#0" />
-            <element signature="method#printStages#0;class#Factory#0" />
-            <element signature="method#updateStatistics#0;class#Factory#0" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>

@@ -1,27 +1,51 @@
 /**
  * Created by tom on 26/05/2018.
  *
- * Stores the statistics for the production line.
+ * Stores the statistics for the production line. Important statistics stored are:
+ * The time that the stages spend starving, blocked and processing.
+ * The average number of items in a queue at any time and the average time an item spend in a queue.
+ * The path taken by an item to be completed.
  */
 public class Stats {
 
     private int itemsProcessed;
     private int itemsCreated;
     private double globalTime;
-    private int[] numItemPerPath = new int[4];
+    private int[] numItemPerPath = new int[4];               //0: S2a - S4a. 1: S2a - S4b. 2: S2b - S4a. 3: S2b - S4b.
     private double[][] stageStateTimes = new double[8][3];   //Time. Col 1: Processing, Col 2: Starving, Col 3: Blocked.
     private double[][] queueStatistics = new double [5][2];  //Col 1: Collective wait time, Col 2: Number of Item
 
+    /**
+     * Initially a statistics item's values are zero.
+     */
     Stats(){
         itemsProcessed = 0;
         itemsCreated = 0;
         globalTime = 0;
     }
+
+    /**
+     * This increases the number of items processed by 1 and is invoked every time an item is ejected from the final
+     * stage in the production line.
+     */
     public void updateNumProcessed(){
         itemsProcessed++;
     }
+
+    /**
+     * Increments the num ber of items that have been created every time the stock is taken from.
+     */
     public void updateNumCreated(){itemsCreated++;}
+
+    /**
+     * Gives the statistics object the currentTime. The currentTime is required to calculate some important statistics.
+     * @param theTime The current time of the factory.
+     */
     public void updateTime(double theTime){globalTime = theTime;}
+
+    /**
+     * Prints out the important statistics in a table.
+     */
     public void printStats(){
 
 
@@ -93,6 +117,14 @@ public class Stats {
 
 
     }
+
+    /**
+     * Takes all of the times for how longs the stages in the production line have been in each state. Performs a
+     * calculation to give the processing time as a percentage of all time. Hence this method requires the closing time
+     * of the system.
+     * @param focusStage The stage that is having its statistics stored.
+     * @param finishTime The time at which the simulation ends.
+     */
     public void updateStageStateTimes(Stage focusStage, double finishTime) {
 
         //Time. Col 1: Processing, Col 2: Starving, Col 3: Blocked.
@@ -142,12 +174,24 @@ public class Stats {
         }
 
     }
-    //update average time an item spends in a queue.
+
+    /**
+     * Updates the statistics pertaining to the queues. The information is stored in the queues and then taken from them
+     * at the conclusion of the simulation.
+     * @param line
+     * @param index
+     */
     public void updateQueues(WaitingLine line, int index) {
         queueStatistics[index][0] = (line.getTimeItemsQueued()/line.getNumQueuedItems());
         queueStatistics[index][1] = line.getNumQueuedItems()/itemsProcessed;
 
     }
+
+    /**
+     * Updates the number of items that have taken one of four paths to ejection into the void at the production line's
+     * end. Hence this method is invoked whenever an item is ejected from the end of the production line.
+     * @param item The item that has been ejected from the production line.
+     */
     public void updatePaths(Item item){
         switch(item.getPath()){
             case "S0S1S2aS3S4aS5":
