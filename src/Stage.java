@@ -66,11 +66,24 @@ public class Stage implements Comparable<Stage> {
             return temp;
         }
     }
+    //return 0 - highest priority to this object.
+    //return 1 - highest priority to challenger object.
     public int compareTo(Stage stageToCheck){
-        if(time  == stageToCheck.getTime() || time < stageToCheck.getTime()){
-            return 1;   //Higher priority as completion time is less.
+
+        if(time == -1 && stageToCheck.getTime() == -1) {
+            return 0;                                       //priority to this.
+        }
+        else if(time == -1) {
+            return 1;                                       //priority to challenger.
+        }else if(stageToCheck.getTime() == -1){
+            return 0;                                       //priority to this.
         }else{
-            return -1;  //lower priority.
+            if(time < stageToCheck.getTime() || time == stageToCheck.getTime()){
+                return 0;                                   //priority to this.
+            }else{
+                return 1;                                   //priority to challenger.
+            }
+
         }
     }
 

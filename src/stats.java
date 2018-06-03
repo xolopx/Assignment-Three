@@ -33,22 +33,22 @@ public class Stats {
         int row = 0;
         int column = 0;
         switch(focusStage.getName()){
-            case "0":
+            case "S0":
 
                 break;
-            case "1":
+            case "S1":
                 break;
-            case "2a":
+            case "S2a":
                 break;
-            case "2b":
+            case "S2b":
                 break;
-            case "3":
+            case "S3":
                 break;
-            case "4a":
+            case "S4a":
                 break;
-            case "4b":
+            case "S4b":
                 break;
-            case "5":
+            case "S5":
                 break;
 
 

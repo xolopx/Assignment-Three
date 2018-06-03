@@ -30,7 +30,7 @@ public class Factory {
         M  = mean;
         N = range;
         theTime = 0;
-        stock = new Stock(mean, range);
+        stock = new Stock();
         initWaitingLines(qLength);
         initStages();
     }
@@ -41,9 +41,9 @@ public class Factory {
         int round = 0;
         while(theTime < productionTime){
             updateFactory();
-            System.out.println("Round: " + round + "\t Time: " + theTime);
-            printStages();
-            System.out.println("\n");
+           // System.out.println("Round: " + round + "\t Time: " + theTime);
+           // printStages();
+           //System.out.println("\n");
 
             round++;
         }
@@ -176,7 +176,7 @@ public class Factory {
                             }
                         } else {
                             //if there is no previous it is stage0. Take from stock.
-                            focusStage.processItem(stock.takeItem(0), theTime);
+                            focusStage.processItem(stock.takeStock(), theTime);
                             changeFlag = true;
                             stats.updateNumCreated();
                         }
