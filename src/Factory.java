@@ -190,7 +190,7 @@ public class Factory {
         stages.sort();
         Stage priorityStage = stages.getHead();         //Highest priority stage.
 
-        /*GET SUS ON WHEN AND HOW STATISTICS ARE STORED*/
+
         if(priorityStage.getTime()!=-1) {               //-1 means this is the first run. No items have been processed.
 
             updateStageStats(priorityStage);
@@ -207,71 +207,53 @@ public class Factory {
      * feeding starving stages.
      */
     private void processChanges()  {
+        Stage focusStage;
+        boolean changeFlag = false;
+       do{
+           changeFlag = false;
+            //Starving
+           Iterator<Stage> starveIterator = stages.iterator();
+           while(starveIterator.hasNext()){
+                focusStage = starveIterator.next();
 
-        boolean changeFlag;                             //Changes made = true. No more changes = false;
-        do {
-            changeFlag = false;
-
-            for (Stage focusStage : stages) {
-                switch (focusStage.getState()) {
-
-                    case -1://Attend to starving stages.
-                        if (focusStage.hasPrevious()) {
-                            if (!focusStage.isPrevEmpty()) {
-                                focusStage.processItem(focusStage.takePrev(currentTime), currentTime);
-                                changeFlag = true;
-                            }
-                        } else {
-                            //if there is no previous it is stage0. Take from stock.
-                            focusStage.processItem(stock.takeStock(), currentTime);
-                            changeFlag = true;
-                            stats.updateNumCreated();
-                        }
-                        break;
-
-                    case 0://Attend to blocked stages.
-                        if (focusStage.hasNext()) {
-                            if (!(focusStage.isNextFull())) {
-
-                                focusStage.getNextQ().addItem(focusStage.ejectItem(currentTime), currentTime);
-                                //System.out.println("Size of queue is: " + focusStage.getNextQ().getSize());
-                                changeFlag = true;
-                            }
-                        }
-                        else {
-                            //if there is no next queue this is stage5 so just eject.
-
-                            stats.updatePaths(focusStage.ejectItem(currentTime));
-                            stats.updateNumProcessed();
+                if(focusStage.getState()== -1){
+                    if(focusStage.hasPrevious()){
+                        if(!focusStage.isPrevEmpty()){
+                            focusStage.processItem(focusStage.takePrev(currentTime),currentTime);
                             changeFlag = true;
                         }
-
-                        break;
-
-                        /*Essentially redundant*/
-//                    case 1: //If processing
-//                        //if this is the case try to offload your shit bruh.
-//                        if(focusStage.getTime()<= currentTime) {
-//                            if (focusStage.hasNext()) {
-//
-//                                if (focusStage.isNextFull()) {
-//                                    focusStage.setState(0);//blocked now.
-//                                } else {
-//                                    focusStage.getNextQ().addItem(focusStage.ejectItem(currentTime), currentTime);
-//                                    changeFlag = true;
-//                                }
-//                            } else {//yo is stage 5.
-//
-//                                stats.updatePaths(focusStage.ejectItem(currentTime));
-//                                stats.updateNumProcessed();
-//                                changeFlag = true;
-//                            }
-//                        }
-//                        break;
+                        else{
+                            focusStage.setState(-1);//keep starving.
+                        }
+                    }else{
+                        focusStage.processItem(stock.takeStock(),currentTime);
+                        stats.updateNumCreated();
+                        changeFlag = true;
+                    }
                 }
+           }
+           //Blocked
+           Iterator<Stage> blockedIterator = stages.iterator();
+           while(blockedIterator.hasNext()){
+               focusStage = blockedIterator.next();
 
-            }
-        } while (changeFlag);
+               if(focusStage.getState()== 0){
+                   if(focusStage.hasNext()){
+                       if(!focusStage.isNextFull()){
+                           focusStage.getNextQ().addItem(focusStage.ejectItem(currentTime),currentTime);
+                           changeFlag = true;
+                       }else{
+                           focusStage.setState(0);
+                           }
+                   }else{
+                       stats.updatePaths(focusStage.ejectItem(currentTime));
+                       stats.updateNumProcessed();
+                       changeFlag = true;
+                   }
+
+               }
+           }
+       }while(changeFlag);
     }
 
     /**
